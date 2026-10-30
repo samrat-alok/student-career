@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Career Roadmap | Career Margdarshak</title>
+    <link rel="stylesheet" href="doctor.css">
+    <link rel="stylesheet" href="doctor.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <a href="student.html" class="brand">Career <span>Margdarshak</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#internships">Internships</a>
+        <a href="#jobs">Jobs</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">YOUR FUTURE IN HEALTHCARE</p>
+        <h1>Apna Medical Career <span>Chunein</span></h1>
+        <p>
+            Doctor, surgeon ya medical specialist banna chahte hain?
+            Medical departments, education roadmap, internships aur
+            career opportunities explore karein.
+        </p>
+        <div class="hero-buttons">
+            <a href="#departments" class="btn primary-btn">Departments Dekhein</a>
+            <a href="#roadmap" class="btn outline-btn">Career Roadmap</a>
+        </div>
+    </div>
+    <div class="hero-icon">🩺</div>
+</section>
+
+<!-- Medical departments -->
+<section class="section" id="departments">
+    <div class="section-heading">
+        <p class="tagline">EXPLORE MEDICAL FIELDS</p>
+        <h2>Doctor Departments</h2>
+        <p>Apni interest ke hisaab se specialty select karein.</p>
+    </div>
+
+    <div class="department-selector">
+        <label for="departmentSelect">Medical department select karein</label>
+        <select id="departmentSelect">
+            <option value="general">General Medicine</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="surgery">General Surgery</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="gynecology">Obstetrics & Gynecology</option>
+            <option value="ophthalmology">Ophthalmology</option>
+            <option value="ent">ENT</option>
+            <option value="radiology">Radiology</option>
+            <option value="psychiatry">Psychiatry</option>
+            <option value="emergency">Emergency Medicine</option>
+            <option value="anesthesia">Anesthesiology</option>
+            <option value="oncology">Oncology</option>
+            <option value="pathology">Pathology</option>
+            <option value="pulmonology">Pulmonology</option>
+            <option value="urology">Urology</option>
+        </select>
+        <button type="button" id="showDepartment" class="btn primary-btn">
+            Department Details Dekhein
+        </button>
+    </div>
+
+    <div id="departmentDetails" class="department-details" aria-live="polite">
+        <p class="tagline">YOUR SELECTED MEDICAL FIELD</p>
+        <h3 id="departmentTitle">General Medicine</h3>
+        <p id="departmentDescription"></p>
+        <div class="detail-grid">
+            <div>
+                <h4>Learning Areas</h4>
+                <ul id="departmentSkills"></ul>
+            </div>
+            <div>
+                <h4>Possible Career Roles</h4>
+                <ul id="departmentCareers"></ul>
+            </div>
+        </div>
+        <a href="#roadmap" class="btn primary-btn">Roadmap Dekhein</a>
+    </div>
+
+    <h3 class="subheading">Popular Medical Departments</h3>
+    <div class="department-grid">
+        <button class="department-card" data-department="general" type="button">
+            <span class="department-icon">🩺</span>
+            <strong>General Medicine</strong>
+            <span>Adult health and diseases</span>
+                    <a href="general medicine.html">explor</a>
+        </button>
+        <button class="department-card" data-department="cardiology" type="button">
+            <span class="department-icon">❤️</span>
+            <strong>Cardiology</strong>
+            <span>Heart and circulation</span>
+                                <a href="cardiology.html">explor</a>
+        </button>
+        <button class="department-card" data-department="neurology" type="button">
+            <span class="department-icon">🧠</span>
+            <strong>Neurology</strong>
+            <span>Brain and nerves</span>
+                                <a href="neurology.html">explor</a>
+        </button>
+        <button class="department-card" data-department="pediatrics" type="button">
+            <span class="department-icon">👶</span>
+            <strong>Pediatrics</strong>
+            <span>Child healthcare</span>
+                                <a href="pediatrics.html">explor</a>
+        </button>
+        <button class="department-card" data-department="orthopedics" type="button">
+            <span class="department-icon">🦴</span>
+            <strong>Orthopedics</strong>
+            <span>Bones and joints</span>
+                                <a href="ortho.html">explor</a>
+        </button>
+        <button class="department-card" data-department="surgery" type="button">
+            <span class="department-icon">🏥</span>
+            <strong>General Surgery</strong>
+            <span>Surgical treatment</span>
+                                <a href="general s.html">explor</a>
+        </button>
+        <button class="department-card" data-department="dermatology" type="button">
+            <span class="department-icon">🧴</span>
+            <strong>Dermatology</strong>
+            <span>Skin and hair</span>
+                                <a href="dermatology.html">explor</a>
+        </button>
+        <button class="department-card" data-department="gynecology" type="button">
+            <span class="department-icon">👩‍⚕️</span>
+            <strong>Obstetrics & Gynecology</strong>
+            <span>Pregnancy and women's health</span>
+                                <a href="obst.html">explor</a>
+        </button>
+        <button class="department-card" data-department="ophthalmology" type="button">
+            <span class="department-icon">👁️</span>
+            <strong>Ophthalmology</strong>
+            <span>Eyes and vision</span>
+                                <a href="eye.html">explor</a>
+        </button>
+        <button class="department-card" data-department="ent" type="button">
+            <span class="department-icon">👂</span>
+            <strong>ENT</strong>
+            <span>Ear, nose and throat</span>
+                                <a href="ent.html">explor</a>
+        </button>
+        <button class="department-card" data-department="radiology" type="button">
+            <span class="department-icon">🩻</span>
+            <strong>Radiology</strong>
+            <span>Medical imaging</span>
+                                <a href="radio.html">explor</a>
+        </button>
+        <button class="department-card" data-department="psychiatry" type="button">
+            <span class="department-icon">🧠</span>
+            <strong>Psychiatry</strong>
+            <span>Mental health</span>
+                                <a href="psych.html">explor</a>
+        </button>
+        <button class="department-card" data-department="emergency" type="button">
+            <span class="department-icon">🚑</span>
+            <strong>Emergency Medicine</strong>
+            <span>Urgent medical care</span>
+                                <a href="emer.html">explor</a>
+        </button>
+        <button class="department-card" data-department="anesthesia" type="button">
+            <span class="department-icon">💉</span>
+            <strong>Anesthesiology</strong>
+            <span>Anesthesia and perioperative care</span>
+                                <a href="anest.html">explor</a>
+        </button>
+        <button class="department-card" data-department="oncology" type="button">
+            <span class="department-icon">🎗️</span>
+            <strong>Oncology</strong>
+            <span>Cancer care</span>
+                                <a href="oncology.html">explor</a>
+        </button>
+        <button class="department-card" data-department="pathology" type="button">
+            <span class="department-icon">🔬</span>
+            <strong>Pathology</strong>
+            <span>Laboratory diagnosis</span>
+                                <a href="pathology.html">explor</a>
+        </button>
+        <button class="department-card" data-department="pulmonology" type="button">
+            <span class="department-icon">🫁</span>
+            <strong>Pulmonology</strong>
+            <span>Lungs and breathing</span>
+                                <a href="pathology.html">explor</a>
+        </button>
+        <button class="department-card" data-department="urology" type="button">
+            <span class="department-icon">🩺</span>
+            <strong>Urology</strong>
+            <span>Urinary system and related care</span>
+                                <a href="urology.html">explor</a>
+        </button>
+    </div>
+</section>
+
+<!-- Roadmap -->
+<section class="section roadmap-section" id="roadmap">
+    <div class="section-heading">
+        <p class="tagline">STEP-BY-STEP PLAN</p>
+        <h2>Doctor Career Roadmap</h2>
+        <p>India mein doctor banne ka general educational pathway.</p>
+    </div>
+
+    <div class="roadmap-list">
+        <article class="roadmap-item">
+            <span class="step-number">01</span>
+            <div>
+                <h3>10th ke Baad Science Chunein</h3>
+                <p>11th–12th mein Physics, Chemistry aur Biology (PCB) padhein. Medical admission ki current eligibility check karein.</p>
+            </div>
+        </article>
+        <article class="roadmap-item">
+            <span class="step-number">02</span>
+            <div>
+                <h3>NEET-UG ki Taiyari</h3>
+                <p>MBBS admission ke liye NEET-UG ke current syllabus, eligibility aur counselling rules check karein.</p>
+            </div>
+        </article>
+        <article class="roadmap-item">
+            <span class="step-number">03</span>
+            <div>
+                <h3>MBBS Complete Karein</h3>
+                <p>Recognised medical college mein MBBS ki academic aur required clinical training complete karein.</p>
+            </div>
+        </article>
+        <article class="roadmap-item">
+            <span class="step-number">04</span>
+            <div>
+                <h3>Compulsory Internship</h3>
+                <p>Applicable rules ke according required supervised medical internship complete karein.</p>
+            </div>
+        </article>
+        <article class="roadmap-item">
+            <span class="step-number">05</span>
+            <div>
+                <h3>Registration aur Career</h3>
+                <p>Applicable medical registration requirements poori karke eligible medical roles ke liye apply karein.</p>
+            </div>
+        </article>
+        <article class="roadmap-item">
+            <span class="step-number">06</span>
+            <div>
+                <h3>Specialist Banne ka Raasta</h3>
+                <p>Specialist doctor banne ke liye relevant postgraduate medical course aur uske admission requirements explore karein.</p>
+            </div>
+        </article>
+    </div>
+    <p class="note">
+        Course duration, eligibility, registration aur admission rules ko official authorities se verify karein.
+    </p>
+</section>
+
+<!-- Internships -->
+<section class="section" id="internships">
+    <div class="section-heading">
+        <p class="tagline">GAIN EXPERIENCE</p>
+        <h2>Medical Internship Opportunities</h2>
+        <p>Clinical training aur research opportunities ke liye official information check karein.</p>
+    </div>
+
+    <div class="opportunity-grid">
+        <article class="opportunity-card">
+            <span class="status-label">Official Information</span>
+            <h3>National Medical Commission</h3>
+            <p>Medical education, internship aur registration se related rules aur notices dekhein.</p>
+            <a class="btn primary-btn" href="https://www.nmc.org.in/" target="_blank" rel="noopener noreferrer">NMC Website ↗</a>
+        </article>
+        <article class="opportunity-card">
+            <span class="status-label">Research</span>
+            <h3>ICMR</h3>
+            <p>Medical research training, student programmes aur research announcements check karein.</p>
+            <a class="btn primary-btn" href="https://www.icmr.gov.in/" target="_blank" rel="noopener noreferrer">ICMR Website ↗</a>
+        </article>
+        <article class="opportunity-card">
+            <span class="status-label">Hospital Training</span>
+            <h3>Medical Colleges & Hospitals</h3>
+            <p>Apne recognised college aur hospital ke official notices se clinical training aur eligible research programmes ki details lein.</p>
+            <a class="btn primary-btn" href="https://www.aiimsexams.ac.in/" target="_blank" rel="noopener noreferrer">AIIMS Exams Portal ↗</a>
+        </article>
+    </div>
+</section>
+
+<!-- Jobs -->
+<section class="section jobs-section" id="jobs">
+    <div class="section-heading">
+        <p class="tagline">BUILD YOUR MEDICAL CAREER</p>
+        <h2>Medical Jobs & Opportunities</h2>
+        <p>Qualification aur registration ke according eligible roles search karein.</p>
+    </div>
+
+    <div class="opportunity-grid">
+        <article class="opportunity-card">
+            <h3>Hospital Medical Roles</h3>
+            <p>Eligible doctors ke liye medical officer, resident doctor aur hospital roles ki vacancies dekhein.</p>
+            <a class="text-link" href="https://www.naukri.com/" target="_blank" rel="noopener noreferrer">Search Jobs ↗</a>
+        </article>
+        <article class="opportunity-card">
+            <h3>Government Medical Jobs</h3>
+            <p>Government hospitals, health departments aur public-sector vacancies ke official notifications check karein.</p>
+            <a class="text-link" href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">National Career Service ↗</a>
+        </article>
+        <article class="opportunity-card">
+            <h3>Medical Research Careers</h3>
+            <p>Research assistant aur eligible research roles ki requirements aur openings dekhein.</p>
+            <a class="text-link" href="https://www.icmr.gov.in/" target="_blank" rel="noopener noreferrer">Research Opportunities ↗</a>
+        </article>
+    </div>
+</section>
+
+<!-- Application Preparation -->
+<section class="section" id="apply">
+    <div class="application-card">
+        <div>
+            <p class="tagline">GET CAREER-READY</p>
+            <h2>Internship / Job Preparation</h2>
+            <p>Apni details bharein aur preparation checklist banayein.</p>
+            <ul class="checklist-info">
+                <li>✔ Updated CV ya resume</li>
+                <li>✔ Qualification aur training documents</li>
+                <li>✔ Relevant registration details, if applicable</li>
+                <li>✔ Internship / job eligibility check</li>
+                <li>✔ Official application aur deadline verify karein</li>
+            </ul>
+        </div>
+
+        <form id="doctorForm">
+            <label for="studentName">Student ka naam</label>
+            <input type="text" id="studentName" placeholder="Apna naam likhein" required>
+
+            <label for="studentEmail">Email address</label>
+            <input type="email" id="studentEmail" placeholder="name@example.com" required>
+
+            <label for="qualification">Current qualification</label>
+            <select id="qualification" required>
+                <option value="">Qualification chunein</option>
+                <option>10th Student / Pass</option>
+                <option>11th / 12th PCB Student</option>
+                <option>12th PCB Pass</option>
+                <option>NEET Aspirant</option>
+                <option>MBBS Student</option>
+                <option>Medical Intern</option>
+                <option>MBBS Graduate</option>
+                <option>Postgraduate Medical Student</option>
+                <option>Specialist Doctor</option>
+                <option>Other</option>
+            </select>
+
+            <label for="applicationType">Opportunity type</label>
+            <select id="applicationType" required>
+                <option value="">Option chunein</option>
+                <option>Internship / Clinical Training</option>
+                <option>Job</option>
+                <option>Research Opportunity</option>
+                <option>Higher Studies</option>
+            </select>
+
+            <label for="formDepartment">Preferred department</label>
+            <select id="formDepartment" required>
+                <option value="">Department chunein</option>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Pediatrics</option>
+                <option>Orthopedics</option>
+                <option>General Surgery</option>
+                <option>Dermatology</option>
+                <option>Obstetrics & Gynecology</option>
+                <option>Ophthalmology</option>
+                <option>ENT</option>
+                <option>Radiology</option>
+                <option>Psychiatry</option>
+                <option>Emergency Medicine</option>
+                <option>Anesthesiology</option>
+                <option>Oncology</option>
+                <option>Pathology</option>
+                <option>Pulmonology</option>
+                <option>Urology</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit" class="btn primary-btn full-btn">
+                Meri Checklist Banayein
+            </button>
+            <div id="applicationResult" class="result-box" aria-live="polite"></div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Career Margdarshak | Medical Career Guidance</p>
+    <a href="student.html">Main Career Page par Wapas Jayein</a>
+</footer>
+
+<script src="doctor.js"></script>
+</body>
+</html>

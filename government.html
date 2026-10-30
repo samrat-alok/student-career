@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Jobs Preparation | Career Margdarshak</title>
+    <link rel="stylesheet" href="government.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <a href="student.html" class="brand">Career Margdarshak</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#jobs">Government Jobs</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#papers">Previous Papers</a>
+        <a href="#practice">Practice Test</a>
+        <a href="#physical">Physical & Medical</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">YOUR GOVERNMENT JOB GUIDE</span>
+        <h1>Prepare Today. Serve Tomorrow.</h1>
+        <p>
+            Explore government exams, understand their syllabus,
+            practise model questions and prepare for physical and
+            medical stages where applicable.
+        </p>
+        <div class="hero-buttons">
+            <a class="btn" href="#jobs">Explore Jobs</a>
+            <a class="btn btn-light" href="#practice">Start Practice</a>
+        </div>
+        <p class="small-note">Always verify eligibility and exam rules from the official notification.</p>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+        <div class="hero-circle"></div>
+        <div class="hero-card">
+            <span>🏆</span>
+            <h2>YOUR GOAL</h2>
+            <p>Learn • Practise • Prepare</p>
+        </div>
+    </div>
+</section>
+
+<main>
+
+<section class="section" id="jobs">
+    <div class="section-heading">
+        <span class="tag">EXPLORE CAREERS</span>
+        <h2>Government Job Categories</h2>
+        <p>Select an exam category to see example jobs and preparation guidance.</p>
+    </div>
+
+    <div class="job-grid">
+        <button class="job-card active" data-exam="upsc">
+            <span>🏛️</span>
+            <h3>UPSC & Civil Services</h3>
+            <p>IAS, IPS, IFS and other notified services.</p>
+        </button>
+
+        <button class="job-card" data-exam="ssc">
+            <span>📑</span>
+            <h3>SSC</h3>
+            <p>CGL, CHSL, MTS, GD and other SSC recruitments.</p>
+        </button>
+
+        <button class="job-card" data-exam="railway">
+            <span>🚆</span>
+            <h3>Railway</h3>
+            <p>NTPC, Group D, ALP and technician recruitments.</p>
+        </button>
+
+        <button class="job-card" data-exam="banking">
+            <span>🏦</span>
+            <h3>Banking</h3>
+            <p>IBPS, SBI and other notified banking posts.</p>
+        </button>
+
+        <button class="job-card" data-exam="defence">
+            <span>🪖</span>
+            <h3>Defence</h3>
+            <p>NDA, CDS, Agniveer and other defence entries.</p>
+        </button>
+
+        <button class="job-card" data-exam="police">
+            <span>👮</span>
+            <h3>Police & CAPF</h3>
+            <p>State police, SSC GD and notified CAPF posts.</p>
+        </button>
+
+        <button class="job-card" data-exam="teaching">
+            <span>📚</span>
+            <h3>Teaching</h3>
+            <p>CTET, state TET and teacher recruitment exams.</p>
+        </button>
+
+        <button class="job-card" data-exam="state">
+            <span>🏢</span>
+            <h3>State Government</h3>
+            <p>State PSC, clerical, revenue and other state posts.</p>
+        </button>
+
+        <button class="job-card" data-exam="technical">
+            <span>⚙️</span>
+            <h3>Technical Jobs</h3>
+            <p>Engineering, IT, scientific and technical posts.</p>
+        </button>
+
+        <button class="job-card" data-exam="other">
+            <span>🗂️</span>
+            <h3>Other Government Jobs</h3>
+            <p>Postal, court, healthcare and department-specific posts.</p>
+        </button>
+    </div>
+
+    <div class="details-panel">
+        <label for="examSelect">Choose Exam Category</label>
+        <select id="examSelect">
+            <option value="upsc">UPSC & Civil Services</option>
+            <option value="ssc">SSC</option>
+            <option value="railway">Railway</option>
+            <option value="banking">Banking</option>
+            <option value="defence">Defence</option>
+            <option value="police">Police & CAPF</option>
+            <option value="teaching">Teaching</option>
+            <option value="state">State Government</option>
+            <option value="technical">Technical Jobs</option>
+            <option value="other">Other Government Jobs</option>
+        </select>
+        <button class="btn" id="showExam">Show Exam Guide</button>
+
+        <h3 id="examTitle">UPSC & Civil Services</h3>
+        <p id="examDescription"></p>
+
+        <h4>Example Exams / Posts</h4>
+        <ul id="examJobs"></ul>
+
+        <h4>Common Preparation Subjects</h4>
+        <ul id="examSubjects"></ul>
+
+        <h4>Typical Selection Stages</h4>
+        <ul id="examStages"></ul>
+
+        <a id="officialLink" class="text-link" href="https://www.upsc.gov.in/"
+           target="_blank" rel="noopener noreferrer">Open Official Website ↗</a>
+        <p class="small-note">
+            This is a category-level overview, not the complete official syllabus.
+            Exact subjects, stages and eligibility depend on the specific exam and notification.
+        </p>
+    </div>
+</section>
+
+<section class="section syllabus-section" id="syllabus">
+    <div class="section-heading">
+        <span class="tag">STUDY SMART</span>
+        <h2>Exam Syllabus & Study Plan</h2>
+        <p>Choose an exam category to create a starting study checklist.</p>
+    </div>
+
+    <div class="syllabus-box">
+        <label for="syllabusSelect">Select Exam Category</label>
+        <select id="syllabusSelect">
+            <option value="upsc">UPSC & Civil Services</option>
+            <option value="ssc">SSC</option>
+            <option value="railway">Railway</option>
+            <option value="banking">Banking</option>
+            <option value="defence">Defence</option>
+            <option value="police">Police & CAPF</option>
+            <option value="teaching">Teaching</option>
+            <option value="state">State Government</option>
+            <option value="technical">Technical Jobs</option>
+            <option value="other">Other Government Jobs</option>
+        </select>
+        <button class="btn" id="showSyllabus">Show Study Plan</button>
+
+        <div id="syllabusResult" class="syllabus-result" aria-live="polite"></div>
+    </div>
+</section>
+
+<section class="section" id="papers">
+    <div class="section-heading">
+        <span class="tag">LEARN FROM PAST PAPERS</span>
+        <h2>Previous-Year Question Papers</h2>
+        <p>Use official exam archives whenever available.</p>
+    </div>
+
+    <div class="paper-grid">
+        <article class="paper-card">
+            <h3>UPSC</h3>
+            <p>Civil Services, NDA, CDS, CAPF and other listed examinations.</p>
+            <a href="https://www.upsc.gov.in/examinations/previous-question-papers"
+               target="_blank" rel="noopener noreferrer">Previous Papers ↗</a>
+        </article>
+
+        <article class="paper-card">
+            <h3>SSC</h3>
+            <p>Find exam information, notices and available papers through the official portal.</p>
+            <a href="https://ssc.gov.in/"
+               target="_blank" rel="noopener noreferrer">Official SSC Portal ↗</a>
+        </article>
+
+        <article class="paper-card">
+            <h3>Railway</h3>
+            <p>Check the relevant RRB or RRC website for recruitment notices and available question papers.</p>
+            <a href="https://indianrailways.gov.in/"
+               target="_blank" rel="noopener noreferrer">Indian Railways ↗</a>
+        </article>
+
+        <article class="paper-card">
+            <h3>Banking</h3>
+            <p>Check official exam notifications and the relevant recruitment body for practice resources.</p>
+            <a href="https://www.ibps.in/"
+               target="_blank" rel="noopener noreferrer">IBPS Official Website ↗</a>
+        </article>
+
+        <article class="paper-card">
+            <h3>Defence</h3>
+            <p>Use the official UPSC examination archive for listed NDA and CDS papers.</p>
+            <a href="https://www.upsc.gov.in/examinations/previous-question-papers"
+               target="_blank" rel="noopener noreferrer">UPSC Paper Archive ↗</a>
+        </article>
+
+        <article class="paper-card">
+            <h3>Teaching & State Exams</h3>
+            <p>Check the official CTET, state recruitment board or State PSC website.</p>
+            <a href="https://ctet.nic.in/"
+               target="_blank" rel="noopener noreferrer">CTET Official Website ↗</a>
+        </article>
+    </div>
+
+    <p class="note">
+        Official portals may not publish every paper for every exam.
+        Availability and paper formats vary by recruitment body.
+    </p>
+</section>
+
+<section class="section practice-section" id="practice">
+    <div class="section-heading">
+        <span class="tag">PRACTICE ZONE</span>
+        <h2>New Model Questions</h2>
+        <p>These are practice questions, not leaked questions or guaranteed predictions of a future exam.</p>
+    </div>
+
+    <div class="quiz-box">
+        <div class="quiz-top">
+            <label for="quizCategory">Question Category</label>
+            <select id="quizCategory">
+                <option value="general">General Knowledge</option>
+                <option value="math">Mathematics</option>
+                <option value="reasoning">Reasoning</option>
+                <option value="english">English</option>
+            </select>
+            <button class="btn" id="newQuiz">Load Questions</button>
+        </div>
+
+        <p id="quizProgress" class="quiz-progress">Question 1 of 5</p>
+        <h3 id="questionText">Loading question...</h3>
+        <div id="answerOptions" class="answer-options"></div>
+
+        <div class="quiz-actions">
+            <button class="btn" id="checkAnswer">Check Answer</button>
+            <button class="btn btn-light" id="nextQuestion" disabled>Next Question</button>
+        </div>
+
+        <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+        <p id="quizScore" class="quiz-score">Score: 0</p>
+    </div>
+</section>
+
+<section class="section physical-section" id="physical">
+    <div class="section-heading">
+        <span class="tag">FITNESS & ELIGIBILITY</span>
+        <h2>Physical Training Guide</h2>
+        <p>Physical tests are required only for selected posts. Check the exact recruitment notice.</p>
+    </div>
+
+    <div class="info-grid">
+        <article class="info-card">
+            <span>🏃</span>
+            <h3>Running & Stamina</h3>
+            <ul>
+                <li>Begin with a comfortable walk and light jog.</li>
+                <li>Increase distance gradually and include recovery days.</li>
+                <li>Practise the exact event only after checking the official standard.</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <span>💪</span>
+            <h3>Strength & Mobility</h3>
+            <ul>
+                <li>Practise bodyweight squats, modified push-ups and core exercises.</li>
+                <li>Warm up before exercise and cool down afterward.</li>
+                <li>Build technique before increasing intensity.</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <span>📏</span>
+            <h3>PET / PST Standards</h3>
+            <ul>
+                <li>Check height, chest, running, jumps or other applicable tests.</li>
+                <li>Standards can vary by post, category, sex and recruitment rules.</li>
+                <li>Follow the current official notification rather than general estimates.</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="info-panel">
+        <h3>Beginner Weekly Fitness Routine</h3>
+        <div class="routine-grid">
+            <div><strong>Day 1</strong><span>Easy walk / jog</span></div>
+            <div><strong>Day 2</strong><span>Light strength + mobility</span></div>
+            <div><strong>Day 3</strong><span>Recovery walk or rest</span></div>
+            <div><strong>Day 4</strong><span>Easy walk / jog</span></div>
+            <div><strong>Day 5</strong><span>Light strength + mobility</span></div>
+            <div><strong>Day 6</strong><span>Comfortable endurance practice</span></div>
+            <div><strong>Day 7</strong><span>Rest and recovery</span></div>
+        </div>
+        <p class="small-note">
+            This is a general beginner routine, not an official PET training standard.
+            Adjust it to your fitness level, avoid training through pain and seek medical advice if needed.
+        </p>
+    </div>
+
+    <div class="medical-panel">
+        <h3>Medical Test Information</h3>
+        <p>
+            Medical examination requirements depend on the post. They may include
+            general physical examination, vision or hearing assessment and other
+            job-specific checks as notified by the recruiting authority.
+        </p>
+        <ul>
+            <li>Read the official medical standards for your specific post.</li>
+            <li>Bring required documents and previous medical records if requested.</li>
+            <li>Only the authorized medical board can determine fitness under the applicable rules.</li>
+            <li>Do not self-diagnose or rely on a generic website to determine eligibility.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section eligibility-section" id="eligibility">
+    <div class="section-heading">
+        <span class="tag">CHECK BEFORE APPLYING</span>
+        <h2>Initial Eligibility Checklist</h2>
+        <p>Use this as a reminder of details to verify, not as an official eligibility decision.</p>
+    </div>
+
+    <form id="eligibilityForm" class="eligibility-form">
+        <label for="education">Your Qualification</label>
+        <select id="education" required>
+            <option value="">Select qualification</option>
+            <option value="10th">10th Pass</option>
+            <option value="12th">12th Pass</option>
+            <option value="graduate">Graduate</option>
+            <option value="technical">Diploma / Technical Qualification</option>
+            <option value="other">Other / Postgraduate</option>
+        </select>
+
+        <label for="age">Your Age (in years)</label>
+        <input id="age" type="number" min="14" max="100" placeholder="Enter age" required>
+
+        <label for="targetExam">Target Exam Category</label>
+        <select id="targetExam" required>
+            <option value="upsc">UPSC & Civil Services</option>
+            <option value="ssc">SSC</option>
+            <option value="railway">Railway</option>
+            <option value="banking">Banking</option>
+            <option value="defence">Defence</option>
+            <option value="police">Police & CAPF</option>
+            <option value="teaching">Teaching</option>
+            <option value="state">State Government</option>
+            <option value="technical">Technical Jobs</option>
+            <option value="other">Other Government Jobs</option>
+        </select>
+
+        <button type="submit" class="btn">Create My Checklist</button>
+    </form>
+
+    <div id="eligibilityResult" class="result-panel" aria-live="polite"></div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Career Margdarshak | Prepare • Practise • Progress</p>
+    <a href="student.html">Back to Home</a>
+</footer>
+
+<script src="government.js"></script>
+</body>
+</html>

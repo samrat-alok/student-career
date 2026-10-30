@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Cardiology career roadmap, education, skills, internships, and job opportunities.">
+    <title>Cardiology Career Roadmap | Career Margdarshak</title>
+    <link rel="stylesheet" href="cardiology.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">CAREER <span>GUIDE</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#skills">Skills</a>
+        <a href="#internships">Internships</a>
+        <a href="#jobs">Jobs</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tag">MEDICAL CAREER PATHWAY</p>
+        <h1>Become a <span>Cardiologist</span></h1>
+        <p>
+            Explore the complete roadmap to becoming a cardiologist.
+            Learn about medical education, essential skills, clinical
+            training, internships, and career opportunities.
+        </p>
+        <a href="#roadmap" class="primary-btn">Explore Career Roadmap</a>
+    </div>
+    <div class="hero-card">
+        <div class="heart-icon">♥</div>
+        <h2>Cardiology</h2>
+        <p>Study of the heart and cardiovascular system</p>
+        <span>SCIENCE • MEDICINE • TECHNOLOGY</span>
+    </div>
+</section>
+
+<section class="section" id="education">
+    <div class="section-heading">
+        <p>START YOUR JOURNEY</p>
+        <h2>Choose Your Education Level</h2>
+    </div>
+
+    <div class="card-grid">
+        <article class="info-card">
+            <h3>Class 10</h3>
+            <p>Build a strong foundation in Science, Mathematics, and Biology.</p>
+            <button class="outline-btn" data-level="10">Explore Guidance</button>
+        </article>
+
+        <article class="info-card">
+            <h3>Class 11–12</h3>
+            <p>Choose the PCB stream and prepare for the NEET-UG examination.</p>
+            <button class="outline-btn" data-level="12">Explore Guidance</button>
+        </article>
+
+        <article class="info-card">
+            <h3>After Class 12</h3>
+            <p>Understand medical entrance examinations and the MBBS admission process.</p>
+            <button class="outline-btn" data-level="after12">Explore Guidance</button>
+        </article>
+
+        <article class="info-card">
+            <h3>MBBS Students</h3>
+            <p>Develop clinical knowledge and explore postgraduate cardiology pathways.</p>
+            <button class="outline-btn" data-level="mbbs">Explore Guidance</button>
+        </article>
+    </div>
+    <div id="levelGuidance" class="guidance-box" hidden></div>
+</section>
+
+<section class="section" id="roadmap">
+    <div class="section-heading">
+        <p>YOUR CAREER JOURNEY</p>
+        <h2>Cardiology Career Roadmap</h2>
+        <span>Mark each milestone as you complete it.</span>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-info">
+            <span>Roadmap Completion</span>
+            <strong id="progressText">0%</strong>
+        </div>
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <div class="roadmap-list">
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>01. Complete Class 10</span></label>
+            <p>Develop a strong academic foundation in Science, Mathematics, and English.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>02. Choose PCB in Class 11–12</span></label>
+            <p>Study Physics, Chemistry, and Biology. Prepare for medical entrance examinations.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>03. Qualify NEET-UG</span></label>
+            <p>Prepare for and qualify the National Eligibility cum Entrance Test for undergraduate medical admission.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>04. Complete MBBS</span></label>
+            <p>Complete the prescribed MBBS academic and clinical training at a recognised medical institution.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>05. Complete Compulsory Internship</span></label>
+            <p>Gain supervised clinical experience through the required internship and complete applicable registration requirements.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>06. Pursue Postgraduate Medical Training</span></label>
+            <p>Follow an eligible postgraduate pathway, commonly MD/DNB General Medicine, according to current admission rules.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>07. Specialise in Cardiology</span></label>
+            <p>Complete the required super-speciality training, commonly DM/DrNB Cardiology, subject to current eligibility rules.</p>
+        </article>
+
+        <article class="roadmap-item">
+            <label><input type="checkbox" class="progress-check"> <span>08. Build Professional Experience</span></label>
+            <p>Develop clinical expertise, maintain professional registration, and pursue suitable cardiology positions.</p>
+        </article>
+    </div>
+
+    <button class="danger-btn" id="resetProgress">Reset Roadmap Progress</button>
+</section>
+
+<section class="section" id="skills">
+    <div class="section-heading">
+        <p>PROFESSIONAL DEVELOPMENT</p>
+        <h2>Essential Skills for a Cardiologist</h2>
+    </div>
+
+    <div class="card-grid">
+        <article class="info-card">
+            <h3>Medical Knowledge</h3>
+            <ul>
+                <li>Human Anatomy</li>
+                <li>Human Physiology</li>
+                <li>Cardiovascular Diseases</li>
+                <li>Pharmacology</li>
+                <li>Clinical Diagnosis</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <h3>Clinical Skills</h3>
+            <ul>
+                <li>ECG Interpretation</li>
+                <li>Echocardiography Knowledge</li>
+                <li>Patient Assessment</li>
+                <li>Clinical Decision-Making</li>
+                <li>Emergency Response</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Medical Equipment Handling</li>
+                <li>Digital Medical Records</li>
+                <li>Medical Research</li>
+                <li>Healthcare Technology</li>
+                <li>Data Interpretation</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <h3>Personal Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Critical Thinking</li>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+                <li>Empathy and Patience</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="study">
+    <div class="section-heading">
+        <p>PLAN YOUR LEARNING</p>
+        <h2>Personal Study Planner</h2>
+    </div>
+
+    <div class="planner">
+        <form id="studyForm">
+            <input type="text" id="studyTask" placeholder="Enter your study goal" required>
+            <select id="studySubject" required>
+                <option value="">Select Subject</option>
+                <option>Biology</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>Human Anatomy</option>
+                <option>Human Physiology</option>
+                <option>Medical Science</option>
+            </select>
+            <button type="submit" class="primary-btn">Add Study Goal</button>
+        </form>
+        <ul id="studyList"></ul>
+    </div>
+</section>
+
+<section class="section" id="internships">
+    <div class="section-heading">
+        <p>GAIN PRACTICAL EXPERIENCE</p>
+        <h2>Internship and Clinical Training Resources</h2>
+    </div>
+
+    <div class="card-grid">
+        <article class="info-card">
+            <h3>AIIMS</h3>
+            <p>Explore official medical education, clinical training, and institutional opportunities.</p>
+            <a href="https://www.aiims.edu/" target="_blank" rel="noopener noreferrer">Visit Official Website ↗</a>
+        </article>
+
+        <article class="info-card">
+            <h3>National Medical Commission</h3>
+            <p>Check medical education regulations, recognised qualifications, and registration information.</p>
+            <a href="https://www.nmc.org.in/" target="_blank" rel="noopener noreferrer">Visit Official Website ↗</a>
+        </article>
+
+        <article class="info-card">
+            <h3>National Board of Examinations</h3>
+            <p>Explore official information about DNB and DrNB medical training pathways.</p>
+            <a href="https://natboard.edu.in/" target="_blank" rel="noopener noreferrer">Visit Official Website ↗</a>
+        </article>
+
+        <article class="info-card">
+            <h3>NEET Examination</h3>
+            <p>Find official examination notifications, eligibility criteria, and admission information.</p>
+            <a href="https://exams.nta.ac.in/NEET/" target="_blank" rel="noopener noreferrer">Visit Official Website ↗</a>
+        </article>
+    </div>
+    <p class="note">Always check official eligibility criteria. Clinical internships and patient-care activities must follow institutional rules and supervision requirements.</p>
+</section>
+
+<section class="section" id="jobs">
+    <div class="section-heading">
+        <p>CAREER OPPORTUNITIES</p>
+        <h2>Career Options in Cardiology</h2>
+    </div>
+
+    <div class="card-grid">
+        <article class="info-card">
+            <h3>Clinical Cardiologist</h3>
+            <p>Diagnose and manage cardiovascular conditions and provide patient care.</p>
+        </article>
+        <article class="info-card">
+            <h3>Interventional Cardiologist</h3>
+            <p>Perform specialised catheter-based cardiovascular procedures after appropriate training.</p>
+        </article>
+        <article class="info-card">
+            <h3>Electrophysiologist</h3>
+            <p>Specialise in heart rhythm disorders and related procedures.</p>
+        </article>
+        <article class="info-card">
+            <h3>Academic Cardiologist</h3>
+            <p>Teach medical students, conduct research, and contribute to medical education.</p>
+        </article>
+        <article class="info-card">
+            <h3>Cardiac Researcher</h3>
+            <p>Work on cardiovascular research, clinical studies, and medical innovation.</p>
+        </article>
+        <article class="info-card">
+            <h3>Hospital Consultant</h3>
+            <p>Work in hospitals, specialised cardiac centres, and healthcare institutions.</p>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="profile">
+    <div class="section-heading">
+        <p>YOUR CAREER PROFILE</p>
+        <h2>Create Your Student Profile</h2>
+    </div>
+
+    <form id="profileForm" class="profile-form">
+        <input type="text" id="studentName" placeholder="Enter your full name" required>
+        <input type="email" id="studentEmail" placeholder="Enter your email address" required>
+        <select id="currentEducation" required>
+            <option value="">Select Current Education</option>
+            <option>Class 10</option>
+            <option>Class 11</option>
+            <option>Class 12</option>
+            <option>NEET Aspirant</option>
+            <option>MBBS Student</option>
+            <option>Medical Graduate</option>
+        </select>
+        <button type="submit" class="primary-btn">Save Career Profile</button>
+    </form>
+    <p id="profileMessage" class="success-message"></p>
+</section>
+
+<section class="section final-section">
+    <h2>Your Journey Towards Heart Care Starts Here.</h2>
+    <p>Learn consistently, build your medical knowledge, and work towards a career in cardiovascular healthcare.</p>
+    <a href="#home" class="primary-btn">Back to Top ↑</a>
+</section>
+</main>
+
+<footer>
+    <p>© 2026 Career Margdarshak | Cardiology Career Guide</p>
+    <p>Educational information only. Always verify medical education and licensing requirements through official authorities.</p>
+</footer>
+
+<script src="cardiology.js"></script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corporate Lawyer career roadmap, skills, internships, jobs and learning resources in India.">
+  <title>Corporate Lawyer | Career Margdarshak</title>
+  <link rel="stylesheet" href="Corporate Law.css">
+  <script src="Corporate Law.js" defer></script>
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">⚖</span>
+      Career<span class="accent">Margdarshak</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#overview">Overview</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#skills">Skills</a>
+      <a href="#specializations">Specializations</a>
+      <a href="#internships">Internships</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">CORPORATE LAW • BUSINESS • INDIA</span>
+        <h1>Build Your Career in <span class="gradient-text">Corporate Law</span></h1>
+        <p>
+          Learn how businesses work legally. Explore company law,
+          contracts, mergers, compliance, corporate internships
+          and professional opportunities.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#roadmap" class="btn btn-primary">Explore Roadmap ↗</a>
+          <a href="#internships" class="btn btn-outline">Find Internships</a>
+        </div>
+
+        <div class="hero-points">
+          <span>✓ Career Guidance</span>
+          <span>✓ Practical Skills</span>
+          <span>✓ India Focused</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="law-emblem">⚖</div>
+        <div class="floating-card card-top">🏢 Corporate Law</div>
+        <div class="floating-card card-bottom">📑 Business & Contracts</div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="section-heading">
+        <span class="eyebrow">CAREER OVERVIEW</span>
+        <h2>What is <span class="accent">Corporate Law?</span></h2>
+        <p>Understand how lawyers help companies follow laws and manage business transactions.</p>
+      </div>
+
+      <div class="card-grid grid-four">
+        <article class="info-card">
+          <div class="card-icon">🏢</div>
+          <h3>Corporate Lawyer</h3>
+          <p>A legal professional who advises businesses on company law, contracts, transactions and legal risks.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">📑</div>
+          <h3>Legal Agreements</h3>
+          <p>Work with commercial agreements, employment contracts, NDAs and business documentation.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">📊</div>
+          <h3>Business Compliance</h3>
+          <p>Help organizations understand regulatory requirements, governance and compliance obligations.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🤝</div>
+          <h3>Business Transactions</h3>
+          <p>Support mergers, acquisitions, investments and other corporate transactions.</p>
+        </article>
+      </div>
+
+      <div class="notice">
+        Important: Corporate legal jobs have different eligibility requirements.
+        Some roles require an LL.B. and professional qualifications, while
+        certain contract or compliance support roles may have other eligibility criteria.
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section" id="roadmap">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR CAREER JOURNEY</span>
+        <h2>Corporate Lawyer <span class="accent">Roadmap</span></h2>
+        <p>Select your current education to see your learning path.</p>
+      </div>
+
+      <div class="roadmap-selector">
+        <label for="educationPath">Select your education</label>
+        <select id="educationPath">
+          <option value="12th">After Class 12</option>
+          <option value="graduate">After Graduation</option>
+          <option value="lawstudent">Currently Studying Law</option>
+          <option value="graduateLaw">Law Graduate</option>
+        </select>
+      </div>
+
+      <div id="roadmapContent" class="roadmap-list"></div>
+
+      <div class="progress-panel">
+        <div class="progress-info">
+          <div>
+            <h3>Your Career Progress</h3>
+            <p>Track your completed roadmap steps.</p>
+          </div>
+          <strong id="progressText">0% completed</strong>
+        </div>
+
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div id="roadmapChecklist" class="checklist"></div>
+
+        <button class="btn btn-outline btn-small" id="resetProgress">
+          Reset Progress
+        </button>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <span class="eyebrow">PROFESSIONAL DEVELOPMENT</span>
+        <h2>Essential <span class="accent">Corporate Law Skills</span></h2>
+        <p>Develop practical skills that help you work with businesses and legal departments.</p>
+      </div>
+
+      <div class="card-grid grid-three">
+
+        <article class="info-card skill-card">
+          <div class="card-icon">📑</div>
+          <h3>Contract Drafting</h3>
+          <p>Learn to understand and prepare business agreements.</p>
+          <ul>
+            <li>Non-Disclosure Agreements</li>
+            <li>Employment Contracts</li>
+            <li>Service Agreements</li>
+            <li>Contract Review</li>
+          </ul>
+        </article>
+
+        <article class="info-card skill-card">
+          <div class="card-icon">🏢</div>
+          <h3>Company Law</h3>
+          <p>Understand how companies are formed and governed.</p>
+          <ul>
+            <li>Companies Act, 2013</li>
+            <li>Company Formation</li>
+            <li>Directors and Shareholders</li>
+            <li>Corporate Governance</li>
+          </ul>
+        </article>
+
+        <article class="info-card skill-card">
+          <div class="card-icon">🔎</div>
+          <h3>Legal Research</h3>
+          <p>Find legislation, judgments and regulatory information.</p>
+          <ul>
+            <li>Read Bare Acts</li>
+            <li>Research Judgments</li>
+            <li>Legal Case Analysis</li>
+            <li>Prepare Legal Reports</li>
+          </ul>
+        </article>
+
+        <article class="info-card skill-card">
+          <div class="card-icon">📈</div>
+          <h3>Due Diligence</h3>
+          <p>Learn how legal professionals review business records and risks.</p>
+          <ul>
+            <li>Document Verification</li>
+            <li>Company Records</li>
+            <li>Legal Risk Identification</li>
+            <li>Transaction Research</li>
+          </ul>
+        </article>
+
+        <article class="info-card skill-card">
+          <div class="card-icon">🤝</div>
+          <h3>Negotiation</h3>
+          <p>Develop the ability to discuss and evaluate business terms.</p>
+          <ul>
+            <li>Business Communication</li>
+            <li>Negotiation Exercises</li>
+            <li>Conflict Resolution</li>
+            <li>Professional Ethics</li>
+          </ul>
+        </article>
+
+        <article class="info-card skill-card">
+          <div class="card-icon">💻</div>
+          <h3>Digital & Business Skills</h3>
+          <p>Use technology and business knowledge in legal work.</p>
+          <ul>
+            <li>MS Word & Excel</li>
+            <li>PDF Documentation</li>
+            <li>Financial Statement Basics</li>
+            <li>Legal Technology Tools</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- PRACTICE -->
+      <div class="practice-panel">
+        <div>
+          <span class="eyebrow">CORPORATE LAW PRACTICE LAB</span>
+          <h3>Test Your Corporate Law Knowledge</h3>
+          <p id="quizQuestion">What is the main purpose of an NDA?</p>
+          <div id="quizOptions" class="quiz-options"></div>
+          <p id="quizFeedback" aria-live="polite"></p>
+          <button id="nextQuiz" class="btn btn-outline btn-small" type="button">Next Question →</button>
+        </div>
+        <div class="practice-symbol">§</div>
+      </div>
+    </section>
+
+    <!-- PERSONALITY -->
+    <section class="section" id="personality">
+      <div class="section-heading">
+        <span class="eyebrow">PERSONALITY DEVELOPMENT</span>
+        <h2>Personality of a <span class="accent">Corporate Lawyer</span></h2>
+        <p>Build professional qualities through practice and experience.</p>
+      </div>
+
+      <div class="traits-grid">
+        <div class="trait">
+          <span>01</span>
+          <div><h3>Professionalism</h3><p>Maintain professional conduct and respect workplace responsibilities.</p></div>
+        </div>
+        <div class="trait">
+          <span>02</span>
+          <div><h3>Attention to Detail</h3><p>Carefully examine contracts, clauses, dates and business documents.</p></div>
+        </div>
+        <div class="trait">
+          <span>03</span>
+          <div><h3>Business Mindset</h3><p>Understand how legal decisions affect business operations.</p></div>
+        </div>
+        <div class="trait">
+          <span>04</span>
+          <div><h3>Communication</h3><p>Explain complex legal issues in clear and simple language.</p></div>
+        </div>
+        <div class="trait">
+          <span>05</span>
+          <div><h3>Problem Solving</h3><p>Identify legal risks and evaluate possible solutions.</p></div>
+        </div>
+        <div class="trait">
+          <span>06</span>
+          <div><h3>Time Management</h3><p>Manage deadlines, transactions and multiple responsibilities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALIZATIONS -->
+    <section class="section" id="specializations">
+      <div class="section-heading">
+        <span class="eyebrow">CHOOSE YOUR SPECIALIZATION</span>
+        <h2>Corporate Law <span class="accent">Fields</span></h2>
+        <p>Explore different professional specializations.</p>
+      </div>
+
+      <div class="card-grid grid-three">
+        <article class="info-card">
+          <div class="card-icon">🏢</div>
+          <h3>Company Law</h3>
+          <p>Company incorporation, governance, directors and shareholders.</p>
+          <span class="tag">Companies Act</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🤝</div>
+          <h3>Mergers & Acquisitions</h3>
+          <p>Business acquisitions, mergers, transaction documentation and due diligence.</p>
+          <span class="tag">M&A</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">📑</div>
+          <h3>Contract Law</h3>
+          <p>Commercial agreements, contract negotiations and legal documentation.</p>
+          <span class="tag">Agreements</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">📊</div>
+          <h3>Corporate Compliance</h3>
+          <p>Regulatory compliance, company filings and governance requirements.</p>
+          <span class="tag">Compliance</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">💰</div>
+          <h3>Banking & Finance Law</h3>
+          <p>Financial agreements, lending, securities and financial regulations.</p>
+          <span class="tag">Finance</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">💻</div>
+          <h3>Technology & Data Law</h3>
+          <p>Technology contracts, privacy, cybersecurity regulation and digital businesses.</p>
+          <span class="tag">Technology</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">©</div>
+          <h3>Intellectual Property</h3>
+          <p>Trademark, copyright, patent and brand protection.</p>
+          <span class="tag">IP Law</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🌍</div>
+          <h3>International Business Law</h3>
+          <p>Cross-border transactions, international agreements and trade regulations.</p>
+          <span class="tag">International</span>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">⚖</div>
+          <h3>Corporate Litigation</h3>
+          <p>Company disputes, commercial disputes and arbitration-related matters.</p>
+          <span class="tag">Dispute Resolution</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERNSHIPS -->
+    <section class="section" id="internships">
+      <div class="section-heading">
+        <span class="eyebrow">GET INDUSTRY EXPERIENCE</span>
+        <h2>Corporate Law <span class="accent">Internships</span></h2>
+        <p>Explore possible internship destinations and prepare your application.</p>
+      </div>
+
+      <div class="card-grid grid-three">
+        <article class="info-card">
+          <div class="card-icon">🏢</div>
+          <h3>Corporate Law Firms</h3>
+          <p>Explore internships involving contracts, corporate transactions, research and due diligence.</p>
+          <a class="text-link" href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">Explore Opportunities ↗</a>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🏦</div>
+          <h3>Banking & Financial Firms</h3>
+          <p>Learn about financial documentation, regulatory compliance and business agreements.</p>
+          <a class="text-link" href="https://www.ncs.gov.in/" target="_blank" rel="noopener">Explore Career Listings ↗</a>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🚀</div>
+          <h3>Startups & Companies</h3>
+          <p>Explore legal operations, company documentation, privacy and contract-related work.</p>
+          <a class="text-link" href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">Find Opportunities ↗</a>
+        </article>
+      </div>
+
+      <div class="application-panel">
+        <div>
+          <span class="eyebrow">INTERNSHIP APPLICATION BUILDER</span>
+          <h3>Create Your Application Draft</h3>
+          <p>Prepare a professional email for your chosen corporate legal internship.</p>
+          <p class="small-note">This tool generates a draft only. You must review and submit it yourself.</p>
+        </div>
+
+        <form id="internshipForm" class="application-form">
+          <label for="studentName">Full Name</label>
+          <input id="studentName" required maxlength="80" placeholder="Enter your name">
+
+          <label for="lawCourse">Current Education</label>
+          <select id="lawCourse" required>
+            <option value="">Select Education</option>
+            <option>Class 12 Student</option>
+            <option>BA LL.B. Student</option>
+            <option>BBA LL.B. Student</option>
+            <option>BCom LL.B. Student</option>
+            <option>3-Year LL.B. Student</option>
+            <option>Law Graduate</option>
+          </select>
+
+          <label for="internshipArea">Preferred Specialization</label>
+          <select id="internshipArea" required>
+            <option value="">Choose Specialization</option>
+            <option>Company Law</option>
+            <option>Mergers and Acquisitions</option>
+            <option>Contract Drafting</option>
+            <option>Corporate Compliance</option>
+            <option>Banking and Finance</option>
+            <option>Technology and Data Law</option>
+            <option>Intellectual Property</option>
+          </select>
+
+          <label for="organization">Organization Type</label>
+          <select id="organization" required>
+            <option value="">Select Organization</option>
+            <option>Corporate Law Firm</option>
+            <option>Company Legal Department</option>
+            <option>Bank or Financial Institution</option>
+            <option>Startup</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Generate Application ↗</button>
+        </form>
+
+        <div id="applicationResult" class="draft-result" hidden>
+          <h3>Your Internship Email Draft</h3>
+          <textarea id="applicationDraft" rows="12" readonly></textarea>
+          <button type="button" id="copyDraft" class="btn btn-outline">Copy Application</button>
+          <p id="copyFeedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOBS -->
+    <section class="section" id="jobs">
+      <div class="section-heading">
+        <span class="eyebrow">PROFESSIONAL OPPORTUNITIES</span>
+        <h2>Corporate Law <span class="accent">Jobs</span></h2>
+        <p>Search different job roles and explore their skills and career requirements.</p>
+      </div>
+
+      <div class="job-filters">
+        <label for="jobSearch">Search Jobs</label>
+        <input type="search" id="jobSearch" placeholder="Search corporate lawyer, compliance...">
+
+        <label for="jobType">Select Job Type</label>
+        <select id="jobType">
+          <option value="all">All Jobs</option>
+          <option value="legal">Corporate Legal</option>
+          <option value="compliance">Compliance</option>
+          <option value="finance">Finance & Transactions</option>
+          <option value="research">Research & Advisory</option>
+        </select>
+      </div>
+
+      <div id="jobGrid" class="card-grid grid-three"></div>
+
+      <div class="notice">
+        Job eligibility, salary, experience and professional requirements vary by employer.
+        Check the original vacancy notification before applying.
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <span class="eyebrow">LEARN FROM TRUSTED SOURCES</span>
+        <h2>Corporate Law <span class="accent">Resources</span></h2>
+        <p>Use these resources to learn company law, business regulations and legal research.</p>
+      </div>
+
+      <div class="card-grid grid-three">
+        <article class="resource-card">
+          <span class="resource-label">COMPANY LAW</span>
+          <h3>Ministry of Corporate Affairs</h3>
+          <p>Company law information, MCA services, company filings and regulatory updates.</p>
+          <a href="https://www.mca.gov.in/" target="_blank" rel="noopener">Visit MCA ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">LEGISLATION</span>
+          <h3>India Code</h3>
+          <p>Read the Companies Act, Contract Act and other Indian central legislation.</p>
+          <a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">Explore Acts ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">SECURITIES</span>
+          <h3>SEBI</h3>
+          <p>Explore securities market regulations, corporate disclosures and official circulars.</p>
+          <a href="https://www.sebi.gov.in/" target="_blank" rel="noopener">Visit SEBI ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">CORPORATE GOVERNANCE</span>
+          <h3>ICSI</h3>
+          <p>Learn about company secretarial practice, governance and professional education.</p>
+          <a href="https://www.icsi.edu/" target="_blank" rel="noopener">Visit ICSI ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">BANKING</span>
+          <h3>Reserve Bank of India</h3>
+          <p>Explore banking regulations, financial policy and regulatory information.</p>
+          <a href="https://www.rbi.org.in/" target="_blank" rel="noopener">Visit RBI ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">LEGAL EDUCATION</span>
+          <h3>Bar Council of India</h3>
+          <p>Review legal education requirements and professional rules.</p>
+          <a href="https://www.barcouncilofindia.org/" target="_blank" rel="noopener">Visit BCI ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">CONTRACT LAW</span>
+          <h3>Contract Act, 1872</h3>
+          <p>Study the legal principles governing agreements and contracts in India.</p>
+          <a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">Find the Act ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">BUSINESS KNOWLEDGE</span>
+          <h3>Startup India</h3>
+          <p>Explore startup ecosystem information, schemes and entrepreneurship resources.</p>
+          <a href="https://www.startupindia.gov.in/" target="_blank" rel="noopener">Visit Startup India ↗</a>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-label">LEGAL RESEARCH</span>
+          <h3>Supreme Court of India</h3>
+          <p>Read judgments, court rules and official legal information.</p>
+          <a href="https://www.sci.gov.in/" target="_blank" rel="noopener">Visit Supreme Court ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERVIEW -->
+    <section class="section" id="interview">
+      <div class="section-heading">
+        <span class="eyebrow">JOB PREPARATION</span>
+        <h2>Corporate Lawyer <span class="accent">Interview Practice</span></h2>
+        <p>Prepare for law firm and corporate legal department interviews.</p>
+      </div>
+
+      <div class="interview-box">
+        <div class="interview-tabs" id="interviewTabs">
+          <button class="tab-button active" data-index="0" type="button">Introduction</button>
+          <button class="tab-button" data-index="1" type="button">Contracts</button>
+          <button class="tab-button" data-index="2" type="button">Company Law</button>
+          <button class="tab-button" data-index="3" type="button">Career Goals</button>
+        </div>
+
+        <h3 id="interviewQuestion"></h3>
+        <p id="interviewTip"></p>
+
+        <button id="nextInterview" class="btn btn-primary" type="button">
+          Next Question →
+        </button>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section final-cta">
+      <span class="eyebrow">YOUR CORPORATE LAW JOURNEY STARTS HERE</span>
+      <h2>Understand Business. Master Law. Build Your Career.</h2>
+      <p>Start learning corporate law and develop professional skills step by step.</p>
+      <a href="#roadmap" class="btn btn-primary">Start Your Roadmap ↗</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="brand">
+      <span class="brand-icon">⚖</span>
+      Career<span class="accent">Margdarshak</span>
+    </a>
+    <p>© <span id="currentYear"></span> Career Margdarshak. All Rights Reserved.</p>
+    <p class="footer-note">
+      Educational guidance only. Not legal advice or a guarantee of employment.
+    </p>
+  </footer>
+
+</body>
+</html>

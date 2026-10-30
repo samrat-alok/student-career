@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Career Roadmap | Career Margdarshak</title>
+    <link rel="stylesheet" href="engineer.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="student.html" class="brand">Career <span>Margdarshak</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#internships">Internships</a>
+        <a href="#jobs">Jobs</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">ENGINEERING YOUR FUTURE</p>
+        <h1>Apna Engineering Career <span>Chunein</span></h1>
+
+        <p>
+            Engineering ke alag-alag departments explore karein.
+            Apni interest ke according skills, career roadmap,
+            internships aur jobs ki information paayein.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#departments" class="btn primary-btn">Departments Dekhein</a>
+            <a href="#roadmap" class="btn outline-btn">Career Roadmap</a>
+        </div>
+    </div>
+
+    <div class="hero-icon">⚙️</div>
+</section>
+
+<!-- Engineering Departments -->
+<section class="section" id="departments">
+    <div class="section-heading">
+        <p class="tagline">EXPLORE YOUR OPTIONS</p>
+        <h2>Engineering Departments</h2>
+        <p>Kisi department ko select karke uske career options dekhein.</p>
+    </div>
+
+    <div class="department-selector">
+        <label for="departmentSelect">Apna department select karein</label>
+
+        <select id="departmentSelect">
+            <option value="cse">Computer Science & IT</option>
+            <option value="aiml">Artificial Intelligence & Machine Learning</option>
+            <option value="ece">Electronics & Communication</option>
+            <option value="electrical">Electrical Engineering</option>
+            <option value="mechanical">Mechanical Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="chemical">Chemical Engineering</option>
+            <option value="biotech">Biotechnology Engineering</option>
+            <option value="aerospace">Aerospace Engineering</option>
+            <option value="automobile">Automobile Engineering</option>
+            <option value="robotics">Robotics & Mechatronics</option>
+            <option value="environmental">Environmental Engineering</option>
+            <option value="biomedical">Biomedical Engineering</option>
+        </select>
+
+        <button type="button" id="showDepartment" class="btn primary-btn">
+            Department Details Dekhein
+        </button>
+    </div>
+
+    <div id="departmentDetails" class="department-details" aria-live="polite">
+        <p class="tagline">YOUR SELECTED DEPARTMENT</p>
+        <h3 id="departmentTitle">Computer Science & IT</h3>
+        <p id="departmentDescription">
+            Software, websites, computer systems aur networking ke baare mein seekhein.
+        </p>
+
+        <div class="detail-grid">
+            <div>
+                <h4>Important Skills</h4>
+                <ul id="departmentSkills"></ul>
+            </div>
+
+            <div>
+                <h4>Career Options</h4>
+                <ul id="departmentCareers"></ul>
+            </div>
+        </div>
+
+        <a href="#roadmap" class="btn primary-btn">Iska Roadmap Dekhein</a>
+    </div>
+
+    <h3 class="subheading">Popular Departments</h3>
+
+    <div class="department-grid">
+        <button type="button" class="department-card" data-department="cse">
+            <span class="department-icon">💻</span>
+            <strong>Computer Science & IT</strong>
+            <span>Software, Web, Cybersecurity</span>
+            <a href="it.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="aiml">
+            <span class="department-icon">🤖</span>
+            <strong>AI & Machine Learning</strong>
+            <span>AI, ML, Data Science</span>
+             <a href="ai.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="ece">
+            <span class="department-icon">📡</span>
+            <strong>Electronics & Communication</strong>
+            <span>Circuits, Chips, Embedded Systems</span>
+             <a href="ec.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="electrical">
+            <span class="department-icon">⚡</span>
+            <strong>Electrical Engineering</strong>
+            <span>Power, Motors, Energy</span>
+             <a href="electric.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="mechanical">
+            <span class="department-icon">⚙️</span>
+            <strong>Mechanical Engineering</strong>
+            <span>Machines, CAD, Manufacturing</span>
+             <a href="macenical.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="civil">
+            <span class="department-icon">🏗️</span>
+            <strong>Civil Engineering</strong>
+            <span>Buildings, Roads, Structures</span>
+             <a href="civil.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="chemical">
+            <span class="department-icon">🧪</span>
+            <strong>Chemical Engineering</strong>
+            <span>Process, Plants, Materials</span>
+             <a href="chemical.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="biotech">
+            <span class="department-icon">🧬</span>
+            <strong>Biotechnology</strong>
+            <span>Biology, Labs, Bioprocess</span>
+             <a href="biotech.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="aerospace">
+            <span class="department-icon">🚀</span>
+            <strong>Aerospace Engineering</strong>
+            <span>Aircraft, Space Systems</span>
+             <a href="air.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="automobile">
+            <span class="department-icon">🚗</span>
+            <strong>Automobile Engineering</strong>
+            <span>Vehicles, EV, Vehicle Design</span>
+             <a href="auto.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="robotics">
+            <span class="department-icon">🦾</span>
+            <strong>Robotics & Mechatronics</strong>
+            <span>Robots, Sensors, Automation</span>
+             <a href="robotics.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="environmental">
+            <span class="department-icon">🌱</span>
+            <strong>Environmental Engineering</strong>
+            <span>Water, Waste, Sustainability</span>
+             <a href="envir.html">explor</a>
+        </button>
+
+        <button type="button" class="department-card" data-department="biomedical">
+            <span class="department-icon">🩺</span>
+            <strong>Biomedical Engineering</strong>
+            <span>Medical Devices, Health Technology</span>
+             <a href="biomedical.html">explor</a>
+        </button>
+    </div>
+</section>
+
+<!-- Roadmap -->
+<section class="section roadmap-section" id="roadmap">
+    <div class="section-heading">
+        <p class="tagline">STEP-BY-STEP PLAN</p>
+        <h2>Engineering Career Roadmap</h2>
+        <p>Student se professional engineer banne tak ka general plan.</p>
+    </div>
+
+    <div class="roadmap-list">
+        <article class="roadmap-item">
+            <span class="step-number">01</span>
+            <div>
+                <h3>10th ke Baad Stream Chunein</h3>
+                <p>Engineering ke liye aam taur par 11th–12th mein PCM (Physics, Chemistry, Mathematics) liya jata hai. Course aur admission ki eligibility check karein.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-item">
+            <span class="step-number">02</span>
+            <div>
+                <h3>Entrance Exam aur College</h3>
+                <p>JEE Main, state-level entrance exams aur college-specific admission options dekhein. Har college ki eligibility alag ho sakti hai.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-item">
+            <span class="step-number">03</span>
+            <div>
+                <h3>Department Select Karein</h3>
+                <p>Apni interest, subjects, skills aur future career ko dekhkar engineering branch choose karein.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-item">
+            <span class="step-number">04</span>
+            <div>
+                <h3>Skills aur Projects Banayein</h3>
+                <p>Department ke tools, practical skills, communication, teamwork aur real-world projects par kaam karein.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-item">
+            <span class="step-number">05</span>
+            <div>
+                <h3>Internship Karein</h3>
+                <p>College internships, industry projects, research opportunities aur relevant technical experience hasil karein.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-item">
+            <span class="step-number">06</span>
+            <div>
+                <h3>Job ya Higher Studies</h3>
+                <p>Resume banayein, interview ki taiyari karein aur private jobs, government vacancies ya higher studies ke options explore karein.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Internship -->
+<section class="section" id="internships">
+    <div class="section-heading">
+        <p class="tagline">GAIN EXPERIENCE</p>
+        <h2>Engineering Internships</h2>
+        <p>Department se related internship openings khojein.</p>
+    </div>
+
+    <div class="opportunity-grid">
+        <article class="opportunity-card">
+            <span class="status-label">Technical</span>
+            <h3>Internship Search</h3>
+            <p>Software, electronics, mechanical, civil aur doosre technical fields ki internships khojein.</p>
+            <a class="btn primary-btn" href="https://internshala.com/internships/" target="_blank" rel="noopener noreferrer">Find Internships ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <span class="status-label">Government</span>
+            <h3>AICTE Opportunities</h3>
+            <p>AICTE ke official portal par available internship opportunities aur eligibility check karein.</p>
+            <a class="btn primary-btn" href="https://internship.aicte-india.org/" target="_blank" rel="noopener noreferrer">AICTE Portal ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <span class="status-label">Research & Space</span>
+            <h3>ISRO Careers</h3>
+            <p>Space, science aur engineering se related official opportunities aur announcements dekhein.</p>
+            <a class="btn primary-btn" href="https://www.isro.gov.in/" target="_blank" rel="noopener noreferrer">ISRO Website ↗</a>
+        </article>
+    </div>
+</section>
+
+<!-- Jobs -->
+<section class="section jobs-section" id="jobs">
+    <div class="section-heading">
+        <p class="tagline">BUILD YOUR CAREER</p>
+        <h2>Engineering Jobs</h2>
+        <p>Apne department aur qualification ke according jobs search karein.</p>
+    </div>
+
+    <div class="opportunity-grid">
+        <article class="opportunity-card">
+            <h3>Private Company Jobs</h3>
+            <p>Software, design, manufacturing, electronics aur technical roles khojein.</p>
+            <a class="text-link" href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">Search Jobs ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>Job Portals</h3>
+            <p>Fresher jobs, trainee engineer aur entry-level technical roles dekhein.</p>
+            <a class="text-link" href="https://www.naukri.com/" target="_blank" rel="noopener noreferrer">Naukri Jobs ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>Government Engineering Jobs</h3>
+            <p>Technical vacancies, eligibility, exams aur deadlines official notifications se verify karein.</p>
+            <a class="text-link" href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">National Career Service ↗</a>
+        </article>
+    </div>
+</section>
+
+<!-- Application Preparation -->
+<section class="section" id="apply">
+    <div class="application-card">
+        <div>
+            <p class="tagline">GET JOB-READY</p>
+            <h2>Internship / Job Preparation</h2>
+            <p>Apni details bharein aur engineering application checklist banayein.</p>
+
+            <ul class="checklist-info">
+                <li>✔ Updated resume aur project details</li>
+                <li>✔ Technical skills aur certificates</li>
+                <li>✔ Cover letter ya application email</li>
+                <li>✔ Interview practice aur portfolio</li>
+                <li>✔ Official portal par eligibility check</li>
+            </ul>
+        </div>
+
+        <form id="engineeringForm">
+            <label for="studentName">Student ka naam</label>
+            <input type="text" id="studentName" placeholder="Apna naam likhein" required>
+
+            <label for="studentEmail">Email address</label>
+            <input type="email" id="studentEmail" placeholder="name@example.com" required>
+
+            <label for="qualification">Current qualification</label>
+            <select id="qualification" required>
+                <option value="">Qualification chunein</option>
+                <option>10th Pass</option>
+                <option>12th Student</option>
+                <option>12th Pass</option>
+                <option>Diploma Student</option>
+                <option>B.Tech / B.E. Student</option>
+                <option>B.Tech / B.E. Graduate</option>
+                <option>M.Tech / M.E. Student</option>
+                <option>Other</option>
+            </select>
+
+            <label for="applicationType">Opportunity type</label>
+            <select id="applicationType" required>
+                <option value="">Option chunein</option>
+                <option>Internship</option>
+                <option>Job</option>
+                <option>Both</option>
+            </select>
+
+            <label for="formDepartment">Engineering department</label>
+            <select id="formDepartment" required>
+                <option value="">Department chunein</option>
+                <option>Computer Science & IT</option>
+                <option>AI & Machine Learning</option>
+                <option>Electronics & Communication</option>
+                <option>Electrical</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+                <option>Chemical</option>
+                <option>Biotechnology</option>
+                <option>Aerospace</option>
+                <option>Automobile</option>
+                <option>Robotics & Mechatronics</option>
+                <option>Environmental</option>
+                <option>Biomedical</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit" class="btn primary-btn full-btn">
+                Meri Checklist Banayein
+            </button>
+
+            <div id="applicationResult" class="result-box" aria-live="polite"></div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Career Margdarshak | Engineering Career Guidance</p>
+    <a href="student.html">Main Career Page par Wapas Jayein</a>
+</footer>
+
+<script src="engineer.js"></script>
+<script src="{{ url_for('static', filename='engineer.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Career Roadmap | Career Margdarshak</title>
+    
+    <link rel="stylesheet" href="design.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <a class="brand" href="student.html">Career Margdarshak</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#departments">Design Fields</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#internships">Internships</a>
+        <a href="#jobs">Jobs</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">CREATIVE CAREER GUIDE</span>
+        <h1>Turn Your Creativity Into a Career</h1>
+        <p>
+            Discover design fields, learn the required skills,
+            build your portfolio and prepare for internships and jobs.
+        </p>
+        <a class="btn" href="#departments">Explore Design Fields</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+        <div class="art-circle circle-one"></div>
+        <div class="art-circle circle-two"></div>
+        <div class="art-card">✏️<br>CREATE</div>
+        <div class="art-card second-card">🎨<br>DESIGN</div>
+    </div>
+</section>
+
+<main>
+<section class="section" id="departments">
+    <div class="section-heading">
+        <span class="tag">FIND YOUR INTEREST</span>
+        <h2>Explore Design Departments</h2>
+        <p>Select a field to see its skills, tools and career options.</p>
+    </div>
+
+    <div class="department-grid">
+        <button class="department-card active" data-department="graphic">
+            <span class="card-icon">🎨</span>
+            <h3>Graphic Design</h3>
+            <p>Logos, posters, banners and social media graphics.</p>
+                                <a href="graphic d.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="uiux">
+            <span class="card-icon">📱</span>
+            <h3>UI/UX Design</h3>
+            <p>Design user-friendly websites and mobile apps.</p>
+                                <a href="ui d.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="web">
+            <span class="card-icon">💻</span>
+            <h3>Web Design</h3>
+            <p>Website layouts, colors, typography and responsive pages.</p>
+                                <a href="web d.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="fashion">
+            <span class="card-icon">👗</span>
+            <h3>Fashion Design</h3>
+            <p>Clothing, fashion illustrations and collections.</p>
+                                <a href="fashion d.js">explor</a>
+        </button>
+
+        <button class="department-card" data-department="interior">
+            <span class="card-icon">🏠</span>
+            <h3>Interior Design</h3>
+            <p>Plan attractive and functional indoor spaces.</p>
+                                <a href="interior d.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="product">
+            <span class="card-icon">📦</span>
+            <h3>Product Design</h3>
+            <p>Improve the look, feel and usability of products.</p>
+                                <a href="product d.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="animation">
+            <span class="card-icon">🎬</span>
+            <h3>Animation & Motion</h3>
+            <p>Animated videos, visual effects and motion graphics.</p>
+                                <a href="animation&motion.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="3d">
+            <span class="card-icon">🧊</span>
+            <h3>3D Design</h3>
+            <p>Create 3D models, scenes and visual presentations.</p>
+                                <a href="3d.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="game">
+            <span class="card-icon">🎮</span>
+            <h3>Game Design</h3>
+            <p>Game concepts, levels, characters and game interfaces.</p>
+                                <a href="game design.html">explor</a>
+        </button>
+
+        <button class="department-card" data-department="brand">
+            <span class="card-icon">✨</span>
+            <h3>Brand Design</h3>
+            <p>Brand identity, visual guidelines and advertising.</p>
+                                <a href="brand design.html">explor</a>
+        </button>
+    </div>
+
+    <div class="details-panel" id="departmentDetails">
+        <label for="departmentSelect">Choose a design field</label>
+        <select id="departmentSelect">
+            <option value="graphic">Graphic Design</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="web">Web Design</option>
+            <option value="fashion">Fashion Design</option>
+            <option value="interior">Interior Design</option>
+            <option value="product">Product Design</option>
+            <option value="animation">Animation & Motion Graphics</option>
+            <option value="3d">3D Design</option>
+            <option value="game">Game Design</option>
+            <option value="brand">Brand Design</option>
+        </select>
+
+        <button class="btn" id="showDepartment">Show Details</button>
+
+        <h3 id="departmentTitle">Graphic Design</h3>
+        <p id="departmentDescription"></p>
+
+        <h4>Important Skills & Tools</h4>
+        <ul id="departmentSkills"></ul>
+
+        <h4>Possible Career Roles</h4>
+        <ul id="departmentCareers"></ul>
+    </div>
+</section>
+
+<section class="section roadmap-section" id="roadmap">
+    <div class="section-heading">
+        <span class="tag">STEP-BY-STEP PLAN</span>
+        <h2>Your Design Career Roadmap</h2>
+        <p>Follow these steps to move from beginner to job-ready designer.</p>
+    </div>
+
+    <div class="roadmap">
+        <article class="roadmap-step">
+            <span>01</span>
+            <div>
+                <h3>Explore Your Interest</h3>
+                <p>Choose a design field based on what you enjoy creating.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-step">
+            <span>02</span>
+            <div>
+                <h3>Learn the Fundamentals</h3>
+                <p>Study colors, typography, composition, layout and usability.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-step">
+            <span>03</span>
+            <div>
+                <h3>Practice Design Tools</h3>
+                <p>Start with tools relevant to your field, such as Figma, Canva,
+                   Photoshop, Illustrator or Blender.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-step">
+            <span>04</span>
+            <div>
+                <h3>Build a Portfolio</h3>
+                <p>Create 4–6 strong projects and explain the problem and your solution.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-step">
+            <span>05</span>
+            <div>
+                <h3>Apply for Internships</h3>
+                <p>Prepare your resume, portfolio and a short introduction.</p>
+            </div>
+        </article>
+
+        <article class="roadmap-step">
+            <span>06</span>
+            <div>
+                <h3>Prepare for Jobs</h3>
+                <p>Practice portfolio presentations, design tasks and interview questions.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="internships">
+    <div class="section-heading">
+        <span class="tag">GAIN EXPERIENCE</span>
+        <h2>Internship Opportunities</h2>
+        <p>Look for internships that match your skills and portfolio.</p>
+    </div>
+
+    <div class="opportunity-grid">
+        <article class="opportunity-card">
+            <h3>Internshala</h3>
+            <p>Search for graphic design, UI/UX, web design and animation internships.</p>
+            <a href="https://internshala.com/" target="_blank" rel="noopener noreferrer">Explore Internships ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>LinkedIn</h3>
+            <p>Find design internships, connect with professionals and follow companies.</p>
+            <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">Find Opportunities ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>Behance</h3>
+            <p>Showcase your work and discover projects that can inspire your portfolio.</p>
+            <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Build Your Portfolio ↗</a>
+        </article>
+    </div>
+    <p class="note">Always check the eligibility, company details, stipend and application terms before applying.</p>
+</section>
+
+<section class="section jobs-section" id="jobs">
+    <div class="section-heading">
+        <span class="tag">CAREER OPTIONS</span>
+        <h2>Explore Design Jobs</h2>
+        <p>Search for entry-level roles and filter them by your design specialty.</p>
+    </div>
+
+    <div class="opportunity-grid">
+        <article class="opportunity-card">
+            <h3>Graphic Designer</h3>
+            <p>Work on branding, posters, advertisements and social media creatives.</p>
+            <a href="https://www.naukri.com/" target="_blank" rel="noopener noreferrer">Search Jobs ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>UI/UX Designer</h3>
+            <p>Create wireframes, prototypes and user-friendly digital experiences.</p>
+            <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">Search Jobs ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>Web Designer</h3>
+            <p>Design website pages, responsive layouts and visual components.</p>
+            <a href="https://www.naukri.com/" target="_blank" rel="noopener noreferrer">Search Jobs ↗</a>
+        </article>
+
+        <article class="opportunity-card">
+            <h3>Motion / 3D Designer</h3>
+            <p>Build animated content, 3D assets and visual presentations.</p>
+            <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">Search Jobs ↗</a>
+        </article>
+    </div>
+</section>
+
+<section class="section application-section" id="apply">
+    <div class="section-heading">
+        <span class="tag">GET READY TO APPLY</span>
+        <h2>Internship & Job Preparation Checklist</h2>
+        <p>Fill in your details to generate a personalized preparation checklist.</p>
+    </div>
+
+    <form id="designForm" class="application-form">
+        <label for="studentName">Your Name</label>
+        <input id="studentName" name="studentName" type="text"
+               placeholder="Enter your name" required>
+
+        <label for="studentEmail">Email Address</label>
+        <input id="studentEmail" name="studentEmail" type="email"
+               placeholder="Enter your email" required>
+
+        <label for="qualification">Current Qualification</label>
+        <select id="qualification" name="qualification" required>
+            <option value="">Select qualification</option>
+            <option>10th Pass</option>
+            <option>12th Pass</option>
+            <option>Diploma</option>
+            <option>BCA</option>
+            <option>BA / BSc / BCom</option>
+            <option>B.Des / Design Degree</option>
+            <option>Other</option>
+        </select>
+
+        <label for="applicationType">What are you preparing for?</label>
+        <select id="applicationType" name="applicationType" required>
+            <option value="">Select option</option>
+            <option value="internship">Internship</option>
+            <option value="job">Full-time Job</option>
+            <option value="freelance">Freelancing</option>
+        </select>
+
+        <label for="formDepartment">Preferred Design Field</label>
+        <select id="formDepartment" name="formDepartment" required>
+            <option value="graphic">Graphic Design</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="web">Web Design</option>
+            <option value="fashion">Fashion Design</option>
+            <option value="interior">Interior Design</option>
+            <option value="product">Product Design</option>
+            <option value="animation">Animation & Motion Graphics</option>
+            <option value="3d">3D Design</option>
+            <option value="game">Game Design</option>
+            <option value="brand">Brand Design</option>
+        </select>
+
+        <button class="btn" type="submit">Create My Checklist</button>
+        <p class="note">Your details are used only to display the checklist on this page.
+           This demo does not send your information to a company.</p>
+    </form>
+
+    <div id="applicationResult" class="result-panel" aria-live="polite"></div>
+</section>
+</main>
+
+<footer>
+    <p>© 2026 Career Margdarshak | Explore. Learn. Create. Grow.</p>
+    <a href="student.html">Back to Home</a>
+</footer>
+
+<script src="{{ url_for('static', filename='design.js') }}" defer></script>
+</body>
+</html>

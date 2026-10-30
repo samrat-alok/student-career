@@ -1,0 +1,685 @@
+/* =========================================
+   ENGINEERING CAREER PAGE — CYBERPUNK CSS
+   Existing HTML classes and IDs preserved
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #070b18;
+    --bg-secondary: #0c1326;
+    --card: #111b32;
+    --card-hover: #172440;
+    --cyan: #00f5ff;
+    --purple: #a855f7;
+    --pink: #ff3cac;
+    --green: #00ffb3;
+    --text: #edf6ff;
+    --muted: #a1b2cc;
+    --border: rgba(0, 245, 255, 0.25);
+    --glow: 0 0 20px rgba(0, 245, 255, 0.12);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(ellipse at top left, #142044 0%, transparent 45%),
+        radial-gradient(ellipse at bottom right, #201039 0%, transparent 40%),
+        var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: rgba(7, 11, 24, 0.92);
+    color: var(--text);
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 25px rgba(0, 245, 255, 0.07);
+    position: relative;
+    z-index: 10;
+}
+
+.brand {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgba(0, 245, 255, 0.3);
+}
+
+.brand span {
+    color: var(--cyan);
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.navbar nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.navbar nav a:hover {
+    color: var(--cyan);
+    text-shadow: 0 0 10px var(--cyan);
+}
+
+/* HERO SECTION */
+
+.hero {
+    background:
+        linear-gradient(120deg, rgba(8, 17, 39, 0.96), rgba(29, 14, 57, 0.92)),
+        var(--bg);
+    color: var(--text);
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 8%;
+    top: -100px;
+    background: rgba(0, 245, 255, 0.08);
+    filter: blur(70px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 720px;
+    position: relative;
+    z-index: 1;
+}
+
+.tagline {
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.hero .tagline {
+    color: var(--green);
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--cyan);
+    text-shadow: 0 0 18px rgba(0, 245, 255, 0.3);
+}
+
+.hero-content > p:not(.tagline) {
+    color: #c2d0e5;
+}
+
+.hero-icon {
+    font-size: 100px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(0, 245, 255, 0.06);
+    border: 1px solid rgba(0, 245, 255, 0.4);
+    box-shadow:
+        0 0 25px rgba(0, 245, 255, 0.1),
+        inset 0 0 20px rgba(168, 85, 247, 0.08);
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+
+.hero-icon:hover {
+    transform: translateY(-5px) rotate(2deg);
+    box-shadow: 0 0 35px rgba(0, 245, 255, 0.22);
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.primary-btn {
+    background: var(--cyan);
+    color: #06101b;
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+}
+
+.primary-btn:hover {
+    background: var(--green);
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
+}
+
+.outline-btn {
+    border: 1px solid var(--purple);
+    color: var(--text);
+    background: rgba(168, 85, 247, 0.05);
+}
+
+.outline-btn:hover {
+    background: var(--purple);
+    color: white;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+/* COMMON SECTIONS */
+
+.section {
+    padding: 65px 7%;
+}
+
+.section-heading {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+
+.section-heading h2,
+.application-card h2 {
+    font-size: clamp(25px, 4vw, 36px);
+    color: var(--cyan);
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px rgba(0, 245, 255, 0.12);
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+}
+
+/* DEPARTMENT SELECTOR */
+
+.department-selector {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 24px;
+    background: rgba(17, 27, 50, 0.85);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: var(--glow);
+}
+
+.department-selector label,
+#engineeringForm label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d9e8ff;
+}
+
+.department-selector select,
+#engineeringForm input,
+#engineeringForm select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid rgba(0, 245, 255, 0.25);
+    border-radius: 8px;
+    background: #0a1224;
+    color: var(--text);
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.department-selector select option,
+#engineeringForm select option {
+    background: #0c1326;
+    color: white;
+}
+
+/* DEPARTMENT DETAILS */
+
+.department-details {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 28px;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 245, 255, 0.06),
+        rgba(168, 85, 247, 0.08)
+    );
+    border: 1px solid rgba(0, 245, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: var(--glow);
+}
+
+.department-details h3 {
+    color: var(--cyan);
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.department-details > p:not(.tagline) {
+    margin-bottom: 18px;
+    color: #c1cee2;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.detail-grid h4 {
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+.detail-grid ul {
+    padding-left: 20px;
+}
+
+.detail-grid li {
+    margin-bottom: 7px;
+    color: #c5d3e7;
+}
+
+.subheading {
+    color: var(--cyan);
+    text-align: center;
+    margin: 35px 0 20px;
+}
+
+/* DEPARTMENT CARDS */
+
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.department-card {
+    min-width: 0;
+    min-height: 165px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    background: rgba(17, 27, 50, 0.85);
+    border: 1px solid rgba(0, 245, 255, 0.18);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.department-card:hover,
+.department-card.active {
+    border-color: var(--cyan);
+    background: rgba(0, 245, 255, 0.07);
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 20px rgba(0, 245, 255, 0.12),
+        inset 0 0 15px rgba(0, 245, 255, 0.03);
+}
+
+.department-icon {
+    font-size: 32px;
+}
+
+.department-card strong {
+    color: var(--text);
+}
+
+.department-card > span:last-child {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* ROADMAP AND JOBS */
+
+.roadmap-section,
+.jobs-section {
+    background: rgba(12, 19, 38, 0.85);
+    border-top: 1px solid rgba(168, 85, 247, 0.12);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.12);
+}
+
+.roadmap-list {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    gap: 16px;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+    background: rgba(17, 27, 50, 0.9);
+    border: 1px solid rgba(0, 245, 255, 0.16);
+    border-left: 4px solid var(--cyan);
+    border-radius: 13px;
+    transition: 0.25s ease;
+}
+
+.roadmap-item:hover {
+    transform: translateX(5px);
+    border-color: var(--cyan);
+    box-shadow: var(--glow);
+}
+
+.step-number {
+    min-width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(0, 245, 255, 0.1);
+    border: 1px solid rgba(0, 245, 255, 0.3);
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+.roadmap-item h3 {
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.roadmap-item p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* OPPORTUNITIES */
+
+.opportunity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.opportunity-card {
+    background: rgba(17, 27, 50, 0.9);
+    padding: 25px;
+    border: 1px solid rgba(0, 245, 255, 0.18);
+    border-radius: 15px;
+    transition: 0.25s ease;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--purple);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.12);
+}
+
+.opportunity-card h3 {
+    color: var(--cyan);
+    margin: 12px 0;
+}
+
+.opportunity-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.status-label {
+    display: inline-block;
+    background: rgba(0, 255, 179, 0.09);
+    border: 1px solid rgba(0, 255, 179, 0.25);
+    color: var(--green);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.text-link {
+    color: var(--cyan);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: var(--green);
+    text-shadow: 0 0 8px rgba(0, 255, 179, 0.3);
+    text-decoration: underline;
+}
+
+/* APPLICATION CARD */
+
+.application-card {
+    max-width: 1050px;
+    margin: auto;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    background: rgba(17, 27, 50, 0.92);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--glow);
+}
+
+.checklist-info {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.checklist-info li {
+    margin-bottom: 12px;
+    color: #c1cee2;
+}
+
+#engineeringForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#engineeringForm input,
+#engineeringForm select {
+    margin-bottom: 8px;
+}
+
+#engineeringForm input:focus,
+#engineeringForm select:focus,
+.department-selector select:focus {
+    outline: 2px solid rgba(0, 245, 255, 0.35);
+    border-color: var(--cyan);
+    box-shadow: 0 0 12px rgba(0, 245, 255, 0.1);
+}
+
+.full-btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* FORM RESULT */
+
+.result-box {
+    display: none;
+    padding: 16px;
+    background: rgba(0, 255, 179, 0.07);
+    color: var(--green);
+    border: 1px solid rgba(0, 255, 179, 0.25);
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.result-box.show {
+    display: block;
+}
+
+.result-box h3 {
+    margin-bottom: 8px;
+}
+
+.result-box ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 25px 15px;
+    background: #050914;
+    color: var(--muted);
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.footer a {
+    display: inline-block;
+    color: var(--cyan);
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.footer a:hover {
+    color: var(--green);
+    text-shadow: 0 0 10px rgba(0, 255, 179, 0.4);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .department-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .opportunity-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 16px 5%;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 50px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-icon {
+        font-size: 55px;
+        padding: 15px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+
+    .department-grid,
+    .opportunity-grid,
+    .detail-grid,
+    .application-card {
+        grid-template-columns: 1fr;
+    }
+
+    .application-card {
+        padding: 22px;
+    }
+
+    .roadmap-item {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .department-details {
+        padding: 20px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+    .navbar nav {
+        gap: 9px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .department-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-card {
+        padding: 17px;
+    }
+}
+
+/* ACCESSIBILITY: REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Electronics and Communication Engineering careers, skills, roadmaps, projects and job opportunities.">
+  <title>Electronics & Communication | Career Margdarshak</title>
+  <link rel="stylesheet" href="ec.css">
+  <script src="ec.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">ECE<span>_</span>CORE</a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+  <nav id="nav">
+    <a href="#careers">Careers</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#skills">Skills</a>
+    <a href="#resources">Resources</a>
+    <a href="#projects">Projects</a>
+    <a href="#jobs">Jobs</a>
+  </nav>
+
+  <a href="#roadmap" class="nav-button">Start Learning ↗</a>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <small class="eyebrow">NEXT GENERATION ENGINEERING CAREER HUB</small>
+
+    <h1>
+      ELECTRONICS<br>
+      & <span>COMMUNICATION</span>
+      ENGINEERING
+    </h1>
+
+    <p>
+      Explore the world of electronic circuits, semiconductor technology,
+      communication networks, embedded systems, robotics and intelligent
+      hardware. Build practical engineering skills and prepare for future
+      technology careers.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#careers" class="btn primary">Explore Careers</a>
+      <a href="#roadmap" class="btn outline">Start Roadmap</a>
+    </div>
+
+    <div class="hero-tags">
+      <span>01 / DESIGN</span>
+      <span>02 / DEVELOP</span>
+      <span>03 / TEST</span>
+      <span>04 / INNOVATE</span>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="circuit circuit-one"></div>
+    <div class="circuit circuit-two"></div>
+
+    <div class="chip">
+      <div class="chip-inner">ECE</div>
+      <span>ELECTRONICS SYSTEM</span>
+      <small>● CIRCUIT ONLINE</small>
+    </div>
+
+    <span class="float-box box-one">VLSI DESIGN</span>
+    <span class="float-box box-two">5G COMMUNICATION</span>
+    <span class="float-box box-three">EMBEDDED SYSTEMS</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div><strong>12+</strong><span>Career Domains</span></div>
+  <div><strong>6</strong><span>Learning Stages</span></div>
+  <div><strong>30+</strong><span>Technical Skills</span></div>
+  <div><strong>15+</strong><span>Project Ideas</span></div>
+</section>
+
+<!-- CAREERS -->
+<section class="section" id="careers">
+  <div class="section-heading">
+    <small>01 / EXPLORE OPPORTUNITIES</small>
+    <h2>ECE CAREER <span>DOMAINS</span></h2>
+    <p>Discover professional specializations in electronics, communication and modern hardware technologies.</p>
+  </div>
+
+  <input type="search" id="careerSearch" class="search-box"
+    placeholder="Search careers, technologies or skills...">
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All Domains</button>
+    <button class="filter" data-filter="electronics">Electronics</button>
+    <button class="filter" data-filter="communication">Communication</button>
+    <button class="filter" data-filter="hardware">Hardware</button>
+    <button class="filter" data-filter="advanced">Advanced Technology</button>
+  </div>
+
+  <div class="career-grid" id="careerGrid">
+
+    <article class="career-card" data-category="electronics" data-search="electronics design engineer circuits analog digital">
+      <div class="card-icon">◈</div>
+      <small>DOMAIN 01</small>
+      <h3>Electronics Design Engineer</h3>
+      <p>Design and develop electronic circuits, components and hardware systems.</p>
+      <div class="chips"><span>Analog</span><span>Digital</span><span>PCB</span></div>
+      <button class="roadmap-btn" data-path="electronics">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="vlsi semiconductor chip design verification">
+      <div class="card-icon">⬡</div>
+      <small>DOMAIN 02</small>
+      <h3>VLSI Design Engineer</h3>
+      <p>Develop integrated circuits, semiconductor chips and digital hardware designs.</p>
+      <div class="chips"><span>Verilog</span><span>VHDL</span><span>RTL</span></div>
+      <button class="roadmap-btn" data-path="vlsi">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="communication" data-search="telecommunication engineer 5g 6g wireless networks">
+      <div class="card-icon">⌁</div>
+      <small>DOMAIN 03</small>
+      <h3>Telecommunication Engineer</h3>
+      <p>Work with wireless networks, signal transmission and communication infrastructure.</p>
+      <div class="chips"><span>5G</span><span>RF</span><span>Networking</span></div>
+      <button class="roadmap-btn" data-path="telecom">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="hardware" data-search="embedded systems engineer microcontroller firmware">
+      <div class="card-icon">⚙</div>
+      <small>DOMAIN 04</small>
+      <h3>Embedded Systems Engineer</h3>
+      <p>Develop hardware-software systems for smart devices and electronic products.</p>
+      <div class="chips"><span>C</span><span>Embedded C</span><span>Microcontrollers</span></div>
+      <button class="roadmap-btn" data-path="embedded">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="communication" data-search="signal processing dsp digital signal image audio">
+      <div class="card-icon">∿</div>
+      <small>DOMAIN 05</small>
+      <h3>Signal Processing Engineer</h3>
+      <p>Analyse and process audio, images, signals and communication data.</p>
+      <div class="chips"><span>DSP</span><span>MATLAB</span><span>Python</span></div>
+      <button class="roadmap-btn" data-path="signal">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="hardware" data-search="iot engineer internet things sensors connected devices">
+      <div class="card-icon">◎</div>
+      <small>DOMAIN 06</small>
+      <h3>IoT Engineer</h3>
+      <p>Connect sensors, devices and smart systems using internet technologies.</p>
+      <div class="chips"><span>ESP32</span><span>Arduino</span><span>MQTT</span></div>
+      <button class="roadmap-btn" data-path="iot">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="hardware" data-search="robotics automation engineer control systems">
+      <div class="card-icon">✧</div>
+      <small>DOMAIN 07</small>
+      <h3>Robotics & Automation Engineer</h3>
+      <p>Build automated machines, intelligent robots and industrial control systems.</p>
+      <div class="chips"><span>Robotics</span><span>C++</span><span>Control</span></div>
+      <button class="roadmap-btn" data-path="robotics">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="electronics" data-search="pcb design engineer circuit board hardware">
+      <div class="card-icon">▦</div>
+      <small>DOMAIN 08</small>
+      <h3>PCB Design Engineer</h3>
+      <p>Design printed circuit boards for electronic devices and industrial systems.</p>
+      <div class="chips"><span>KiCad</span><span>Altium</span><span>PCB</span></div>
+      <button class="roadmap-btn" data-path="pcb">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="semiconductor process engineer fabrication testing">
+      <div class="card-icon">◉</div>
+      <small>DOMAIN 09</small>
+      <h3>Semiconductor Engineer</h3>
+      <p>Work on semiconductor fabrication, device testing and chip manufacturing processes.</p>
+      <div class="chips"><span>CMOS</span><span>Fabrication</span><span>Testing</span></div>
+      <button class="roadmap-btn" data-path="semiconductor">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="communication" data-search="rf microwave engineer antenna wireless">
+      <div class="card-icon">⌁</div>
+      <small>DOMAIN 10</small>
+      <h3>RF & Microwave Engineer</h3>
+      <p>Design and test antennas, radio-frequency circuits and microwave systems.</p>
+      <div class="chips"><span>RF</span><span>Antennas</span><span>Microwave</span></div>
+      <button class="roadmap-btn" data-path="rf">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="electronics" data-search="control systems engineer automation industrial electronics">
+      <div class="card-icon">⌬</div>
+      <small>DOMAIN 11</small>
+      <h3>Control Systems Engineer</h3>
+      <p>Develop systems that control machines, processes and industrial equipment.</p>
+      <div class="chips"><span>MATLAB</span><span>Control Theory</span><span>PLC</span></div>
+      <button class="roadmap-btn" data-path="control">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="hardware verification engineer testing fpga">
+      <div class="card-icon">◇</div>
+      <small>DOMAIN 12</small>
+      <h3>Hardware Verification Engineer</h3>
+      <p>Verify digital designs and ensure electronic systems work according to specifications.</p>
+      <div class="chips"><span>SystemVerilog</span><span>FPGA</span><span>Testing</span></div>
+      <button class="roadmap-btn" data-path="verification">Explore Roadmap ↗</button>
+    </article>
+
+  </div>
+
+  <p id="noResults" hidden>No matching career specialization found.</p>
+</section>
+
+<!-- ROADMAP -->
+<section class="section roadmap-section" id="roadmap">
+  <div class="section-heading">
+    <small>02 / YOUR LEARNING JOURNEY</small>
+    <h2>COMPLETE ECE <span>ROADMAP</span></h2>
+    <p>Follow a structured learning path from basic electronics to advanced engineering specializations.</p>
+  </div>
+
+  <div class="roadmap-top">
+    <div>
+      <small>SELECTED CAREER PATH</small>
+      <h3 id="roadmapTitle">Electronics Design Engineer</h3>
+    </div>
+    <span>BEGINNER TO ADVANCED</span>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-label">
+      <strong>YOUR LEARNING PROGRESS</strong>
+      <strong id="progressText">0%</strong>
+    </div>
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="roadmapStages" class="roadmap-stages"></div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-heading">
+    <small>03 / TECHNICAL DEVELOPMENT</small>
+    <h2>ESSENTIAL <span>ECE SKILLS</span></h2>
+    <p>Develop the technical foundation required for electronics and communication engineering.</p>
+  </div>
+
+  <div class="skill-grid">
+
+    <article class="skill-card">
+      <h3>Programming Languages</h3>
+      <div class="chips">
+        <span>C</span><span>C++</span><span>Python</span><span>Embedded C</span><span>MATLAB</span>
+      </div>
+      <p>Learn programming logic, algorithms, embedded programming and numerical computing.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Electronic Components</h3>
+      <div class="chips">
+        <span>Resistors</span><span>Capacitors</span><span>Diodes</span><span>Transistors</span><span>ICs</span>
+      </div>
+      <p>Understand electronic components, their characteristics and practical circuit applications.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Analog & Digital Electronics</h3>
+      <div class="chips">
+        <span>Amplifiers</span><span>Logic Gates</span><span>Flip-Flops</span><span>ADC</span><span>DAC</span>
+      </div>
+      <p>Study analog circuits, digital logic, sequential circuits and electronic systems.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Communication Systems</h3>
+      <div class="chips">
+        <span>AM</span><span>FM</span><span>Modulation</span><span>5G</span><span>6G Concepts</span>
+      </div>
+      <p>Understand signal transmission, wireless communication and network technologies.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Microcontrollers & Embedded Systems</h3>
+      <div class="chips">
+        <span>Arduino</span><span>ESP32</span><span>ARM</span><span>STM32</span><span>Raspberry Pi</span>
+      </div>
+      <p>Learn firmware development, microcontrollers, sensors and hardware interfaces.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>VLSI & Semiconductor</h3>
+      <div class="chips">
+        <span>Verilog</span><span>VHDL</span><span>CMOS</span><span>RTL</span><span>FPGA</span>
+      </div>
+      <p>Understand chip design, digital hardware description and semiconductor technology.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>PCB & Circuit Design</h3>
+      <div class="chips">
+        <span>KiCad</span><span>Altium</span><span>Proteus</span><span>LTspice</span>
+      </div>
+      <p>Learn schematic design, circuit simulation, PCB layout and testing.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Engineering Mathematics</h3>
+      <div class="chips">
+        <span>Calculus</span><span>Linear Algebra</span><span>Probability</span><span>Signals</span><span>Fourier Transform</span>
+      </div>
+      <p>Build mathematical foundations for signals, circuits and communication systems.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section tools-section">
+  <div class="section-heading">
+    <small>04 / ENGINEERING WORKSPACE</small>
+    <h2>IMPORTANT ECE <span>TOOLS</span></h2>
+    <p>Explore software used for electronic design, simulation, programming and engineering development.</p>
+  </div>
+
+  <div class="resource-grid">
+    <a href="https://www.kicad.org/" target="_blank" rel="noopener">
+      <small>PCB DESIGN</small>
+      <h3>KiCad ↗</h3>
+      <p>Design electronic schematics and printed circuit boards.</p>
+    </a>
+
+    <a href="https://www.labcenter.com/" target="_blank" rel="noopener">
+      <small>CIRCUIT SIMULATION</small>
+      <h3>Proteus ↗</h3>
+      <p>Simulate electronic circuits and microcontroller projects.</p>
+    </a>
+
+    <a href="https://www.mathworks.com/products/matlab.html" target="_blank" rel="noopener">
+      <small>ENGINEERING COMPUTING</small>
+      <h3>MATLAB ↗</h3>
+      <p>Perform numerical computing, signal processing and simulations.</p>
+    </a>
+
+    <a href="https://www.ltspice.com/" target="_blank" rel="noopener">
+      <small>CIRCUIT ANALYSIS</small>
+      <h3>LTspice ↗</h3>
+      <p>Explore electronic circuit simulation and analysis.</p>
+    </a>
+
+    <a href="https://www.arduino.cc/" target="_blank" rel="noopener">
+      <small>MICROCONTROLLERS</small>
+      <h3>Arduino ↗</h3>
+      <p>Build electronic prototypes and embedded projects.</p>
+    </a>
+
+    <a href="https://www.altium.com/" target="_blank" rel="noopener">
+      <small>PROFESSIONAL PCB</small>
+      <h3>Altium Designer ↗</h3>
+      <p>Explore professional PCB design and electronic product development.</p>
+    </a>
+
+    <a href="https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html" target="_blank" rel="noopener">
+      <small>FPGA DESIGN</small>
+      <h3>Intel Quartus ↗</h3>
+      <p>Develop and implement FPGA digital logic designs.</p>
+    </a>
+
+    <a href="https://www.xilinx.com/" target="_blank" rel="noopener">
+      <small>FPGA & HARDWARE</small>
+      <h3>AMD Vivado ↗</h3>
+      <p>Explore FPGA development and digital hardware design.</p>
+    </a>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="section-heading">
+    <small>05 / KNOWLEDGE CENTER</small>
+    <h2>LEARNING <span>RESOURCES</span></h2>
+    <p>Learn electronics and communication concepts using educational platforms and official documentation.</p>
+  </div>
+
+  <div class="resource-grid">
+    <a href="https://nptel.ac.in/" target="_blank" rel="noopener">
+      <small>ENGINEERING EDUCATION</small>
+      <h3>NPTEL ↗</h3>
+      <p>Explore engineering courses from Indian institutes.</p>
+    </a>
+
+    <a href="https://swayam.gov.in/" target="_blank" rel="noopener">
+      <small>ONLINE LEARNING</small>
+      <h3>SWAYAM ↗</h3>
+      <p>Access online courses and educational programmes.</p>
+    </a>
+
+    <a href="https://www.allaboutcircuits.com/" target="_blank" rel="noopener">
+      <small>ELECTRONICS</small>
+      <h3>All About Circuits ↗</h3>
+      <p>Learn circuit theory and electronics fundamentals.</p>
+    </a>
+
+    <a href="https://www.electronics-tutorials.ws/" target="_blank" rel="noopener">
+      <small>CIRCUIT THEORY</small>
+      <h3>Electronics Tutorials ↗</h3>
+      <p>Study analog and digital electronic circuits.</p>
+    </a>
+
+    <a href="https://www.arduino.cc/en/Guide" target="_blank" rel="noopener">
+      <small>EMBEDDED SYSTEMS</small>
+      <h3>Arduino Documentation ↗</h3>
+      <p>Learn microcontroller programming and electronics projects.</p>
+    </a>
+
+    <a href="https://docs.zephyrproject.org/" target="_blank" rel="noopener">
+      <small>EMBEDDED SOFTWARE</small>
+      <h3>Zephyr Project ↗</h3>
+      <p>Explore an open-source real-time operating system for embedded devices.</p>
+    </a>
+
+    <a href="https://www.ieee.org/" target="_blank" rel="noopener">
+      <small>ENGINEERING RESEARCH</small>
+      <h3>IEEE ↗</h3>
+      <p>Explore engineering publications and professional resources.</p>
+    </a>
+
+    <a href="https://www.efabless.com/" target="_blank" rel="noopener">
+      <small>CHIP DESIGN</small>
+      <h3>eFabless ↗</h3>
+      <p>Explore open-source silicon design resources.</p>
+    </a>
+
+    <a href="https://www.microchip.com/en-us/education" target="_blank" rel="noopener">
+      <small>MICROCONTROLLERS</small>
+      <h3>Microchip Education ↗</h3>
+      <p>Learn about microcontrollers and embedded development.</p>
+    </a>
+
+    <a href="https://www.analog.com/en/resources/technical-articles.html" target="_blank" rel="noopener">
+      <small>ANALOG ELECTRONICS</small>
+      <h3>Analog Devices ↗</h3>
+      <p>Explore technical articles on analog and mixed-signal systems.</p>
+    </a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-heading">
+    <small>06 / HANDS-ON ENGINEERING</small>
+    <h2>REAL WORLD <span>PROJECTS</span></h2>
+    <p>Build practical electronics and communication projects to develop engineering experience.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <span class="level">BEGINNER</span>
+      <h3>Automatic Street Light</h3>
+      <p>Build an automatic lighting system using an LDR sensor and a microcontroller.</p>
+      <div class="chips"><span>LDR</span><span>Arduino</span><span>LED</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">BEGINNER</span>
+      <h3>Digital Temperature Monitor</h3>
+      <p>Measure and display temperature using sensors and an embedded controller.</p>
+      <div class="chips"><span>Sensor</span><span>LCD</span><span>Arduino</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">INTERMEDIATE</span>
+      <h3>Smart Home Automation</h3>
+      <p>Control household devices using an ESP32 and a secure local interface.</p>
+      <div class="chips"><span>ESP32</span><span>IoT</span><span>Wi-Fi</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">INTERMEDIATE</span>
+      <h3>Digital Communication Simulator</h3>
+      <p>Simulate digital modulation and analyse transmitted signals.</p>
+      <div class="chips"><span>MATLAB</span><span>Python</span><span>DSP</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">ADVANCED</span>
+      <h3>FPGA-Based Digital Clock</h3>
+      <p>Develop a digital clock using hardware description language and FPGA logic.</p>
+      <div class="chips"><span>Verilog</span><span>FPGA</span><span>Digital Logic</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">ADVANCED</span>
+      <h3>IoT-Based Environmental Monitoring</h3>
+      <p>Build a sensor network that monitors environmental conditions and displays collected data.</p>
+      <div class="chips"><span>ESP32</span><span>IoT</span><span>Cloud</span></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- JOBS -->
+<section class="section" id="jobs">
+  <div class="section-heading">
+    <small>07 / PROFESSIONAL OPPORTUNITIES</small>
+    <h2>INTERNSHIPS <span>& JOBS</span></h2>
+    <p>Explore engineering companies, internship platforms and official career opportunities.</p>
+  </div>
+
+  <div class="job-grid">
+
+    <article class="job-card">
+      <h3>Internship Platforms</h3>
+      <p>Search for electronics, embedded systems, hardware and communication internships.</p>
+      <a href="https://internshala.com/" target="_blank" rel="noopener">Internshala ↗</a>
+      <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">LinkedIn Jobs ↗</a>
+      <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service ↗</a>
+      <a href="https://wellfound.com/" target="_blank" rel="noopener">Wellfound ↗</a>
+    </article>
+
+    <article class="job-card">
+      <h3>Semiconductor & Electronics</h3>
+      <p>Explore opportunities in semiconductor and electronic product companies.</p>
+      <a href="https://www.qualcomm.com/company/careers" target="_blank" rel="noopener">Qualcomm Careers ↗</a>
+      <a href="https://careers.nvidia.com/" target="_blank" rel="noopener">NVIDIA Careers ↗</a>
+      <a href="https://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html" target="_blank" rel="noopener">Intel Careers ↗</a>
+      <a href="https://www.samsung.com/in/about-us/careers/" target="_blank" rel="noopener">Samsung Careers ↗</a>
+    </article>
+
+    <article class="job-card">
+      <h3>Telecom & Engineering</h3>
+      <p>Explore communication, networking and engineering career opportunities.</p>
+      <a href="https://www.ericsson.com/en/careers" target="_blank" rel="noopener">Ericsson Careers ↗</a>
+      <a href="https://www.nokia.com/about-us/careers/" target="_blank" rel="noopener">Nokia Careers ↗</a>
+      <a href="https://careers.bosch.com/" target="_blank" rel="noopener">Bosch Careers ↗</a>
+      <a href="https://www.tcs.com/careers" target="_blank" rel="noopener">TCS Careers ↗</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- JOB ROLES -->
+<section class="section">
+  <div class="section-heading">
+    <small>08 / CAREER PLANNING</small>
+    <h2>POPULAR ECE <span>JOB ROLES</span></h2>
+  </div>
+
+  <div class="role-table">
+    <div class="role-row role-head">
+      <span>Job Role</span>
+      <span>Core Skills</span>
+      <span>Typical Work</span>
+    </div>
+
+    <div class="role-row">
+      <strong>Electronics Engineer</strong>
+      <span>Analog, Digital, PCB</span>
+      <span>Circuit design and testing</span>
+    </div>
+
+    <div class="role-row">
+      <strong>VLSI Engineer</strong>
+      <span>Verilog, RTL, FPGA</span>
+      <span>Digital chip design and verification</span>
+    </div>
+
+    <div class="role-row">
+      <strong>Embedded Engineer</strong>
+      <span>C, C++, Microcontrollers</span>
+      <span>Firmware and device development</span>
+    </div>
+
+    <div class="role-row">
+      <strong>Telecom Engineer</strong>
+      <span>RF, 5G, Networks</span>
+      <span>Communication infrastructure</span>
+    </div>
+
+    <div class="role-row">
+      <strong>IoT Engineer</strong>
+      <span>ESP32, Sensors, MQTT</span>
+      <span>Connected device development</span>
+    </div>
+  </div>
+
+  <p class="note">Required qualifications and responsibilities vary across employers and job levels.</p>
+</section>
+
+<!-- CHECKLIST -->
+<section class="section">
+  <div class="section-heading">
+    <small>09 / CAREER PREPARATION</small>
+    <h2>JOB READINESS <span>CHECKLIST</span></h2>
+    <p>Track your learning and preparation before applying for internships and jobs.</p>
+  </div>
+
+  <div class="checklist" id="checklist">
+    <label><input type="checkbox" data-id="basics"> Basic electronics fundamentals completed</label>
+    <label><input type="checkbox" data-id="circuits"> Analog and digital circuits studied</label>
+    <label><input type="checkbox" data-id="programming"> C or Embedded C programming completed</label>
+    <label><input type="checkbox" data-id="tools"> Engineering design tools practised</label>
+    <label><input type="checkbox" data-id="projects"> At least three practical projects completed</label>
+    <label><input type="checkbox" data-id="portfolio"> Project portfolio and documentation prepared</label>
+    <label><input type="checkbox" data-id="resume"> Professional resume prepared</label>
+    <label><input type="checkbox" data-id="interview"> Technical interview preparation completed</label>
+    <label><input type="checkbox" data-id="internship"> Internship applications started</label>
+
+    <div class="check-footer">
+      <strong id="checkCount">0 / 9 Completed</strong>
+      <button id="resetProgress" class="btn outline">Reset Progress</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-heading">
+    <small>10 / KNOWLEDGE SUPPORT</small>
+    <h2>FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+  </div>
+
+  <div class="faq-list">
+    <details>
+      <summary>What is Electronics and Communication Engineering?</summary>
+      <p>ECE is an engineering discipline focused on electronic devices, circuits, communication systems, signal processing and related technologies.</p>
+    </details>
+
+    <details>
+      <summary>Which programming languages are useful in ECE?</summary>
+      <p>C, C++, Python, Embedded C and MATLAB are useful in different electronics and communication specializations.</p>
+    </details>
+
+    <details>
+      <summary>What is VLSI engineering?</summary>
+      <p>VLSI stands for Very Large Scale Integration. It involves designing integrated circuits that contain large numbers of electronic components on a chip.</p>
+    </details>
+
+    <details>
+      <summary>What is the difference between embedded systems and IoT?</summary>
+      <p>An embedded system is a computer integrated into a device to perform specific functions. IoT connects devices so that they can exchange information over a network.</p>
+    </details>
+
+    <details>
+      <summary>Can ECE students work in the IT industry?</summary>
+      <p>Yes. ECE graduates can pursue software, programming, networking, automation and other technology roles when they develop the required skills.</p>
+    </details>
+
+    <details>
+      <summary>Which ECE specialization should beginners choose?</summary>
+      <p>Start with basic electronics and programming. Then explore embedded systems, VLSI, communication, PCB design or IoT based on your interests and strengths.</p>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <small>YOUR FUTURE IN ENGINEERING TECHNOLOGY</small>
+  <h2>DESIGN CIRCUITS. <span>CONNECT THE WORLD.</span></h2>
+  <p>Learn electronics, develop practical skills and build the technology that powers the future.</p>
+  <a href="#roadmap" class="btn primary">Begin Your Journey ↗</a>
+</section>
+
+</main>
+
+<footer>
+  <a href="#home" class="logo">ECE_CORE<span>_</span></a>
+  <p>Electronics & Communication Career Guidance</p>
+  <p>© 2026 Career Margdarshak. Educational Use.</p>
+</footer>
+
+</body>
+</html>

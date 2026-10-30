@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Artificial Intelligence and Machine Learning careers, roadmaps, skills, resources, projects and job opportunities.">
+  <title>AI & Machine Learning | Career Margdarshak</title>
+  <link rel="stylesheet" href="AI.css">
+  <script src="AI.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">AI<span>_</span>CORE</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+  <nav id="nav">
+    <a href="#careers">Careers</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#skills">Skills</a>
+    <a href="#resources">Resources</a>
+    <a href="#projects">Projects</a>
+    <a href="#jobs">Jobs</a>
+  </nav>
+
+  <a href="#roadmap" class="nav-button">Start Learning ↗</a>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="eyebrow">NEXT GENERATION TECHNOLOGY CAREER HUB</span>
+
+    <h1>
+      ARTIFICIAL<br>
+      INTELLIGENCE <span>& MACHINE LEARNING</span>
+    </h1>
+
+    <p>
+      Discover the future of intelligent technology. Learn programming,
+      mathematics, machine learning, deep learning and generative AI.
+      Build real-world projects and prepare for exciting technology careers.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#careers" class="btn primary">Explore Careers</a>
+      <a href="#roadmap" class="btn outline">Start Your Roadmap</a>
+    </div>
+
+    <div class="hero-tags">
+      <span>01 / LEARN</span>
+      <span>02 / PRACTICE</span>
+      <span>03 / BUILD</span>
+      <span>04 / INNOVATE</span>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+    <div class="ai-core">
+      <div class="brain">AI</div>
+      <span>INTELLIGENCE SYSTEM</span>
+      <small>● SYSTEM ONLINE</small>
+    </div>
+    <span class="float-box box-one">MACHINE LEARNING</span>
+    <span class="float-box box-two">NEURAL NETWORKS</span>
+    <span class="float-box box-three">GENERATIVE AI</span>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats">
+  <div><strong>12+</strong><span>Career Specializations</span></div>
+  <div><strong>6</strong><span>Learning Stages</span></div>
+  <div><strong>25+</strong><span>Technical Skills</span></div>
+  <div><strong>15+</strong><span>Project Ideas</span></div>
+</section>
+
+<!-- CAREER DOMAINS -->
+<section class="section" id="careers">
+  <div class="section-heading">
+    <small>01 / EXPLORE OPPORTUNITIES</small>
+    <h2>AI & MACHINE LEARNING <span>CAREERS</span></h2>
+    <p>Explore specialized career paths in intelligent computing and data-driven technologies.</p>
+  </div>
+
+  <input type="search" id="careerSearch"
+    class="search-box"
+    placeholder="Search careers, technologies or skills...">
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All Domains</button>
+    <button class="filter" data-filter="ml">Machine Learning</button>
+    <button class="filter" data-filter="ai">Artificial Intelligence</button>
+    <button class="filter" data-filter="data">Data Science</button>
+    <button class="filter" data-filter="advanced">Advanced AI</button>
+  </div>
+
+  <div class="career-grid" id="careerGrid">
+
+    <article class="career-card" data-category="ml" data-search="machine learning engineer python algorithms model training">
+      <div class="card-icon">◈</div>
+      <small>DOMAIN 01</small>
+      <h3>Machine Learning Engineer</h3>
+      <p>Develop, train and deploy machine learning models to solve real-world problems.</p>
+      <div class="chips"><span>Python</span><span>Scikit-learn</span><span>ML</span></div>
+      <button class="roadmap-btn" data-path="ml">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="ai" data-search="artificial intelligence engineer intelligent systems algorithms">
+      <div class="card-icon">✧</div>
+      <small>DOMAIN 02</small>
+      <h3>AI Engineer</h3>
+      <p>Build intelligent applications using AI models, APIs and automation systems.</p>
+      <div class="chips"><span>Python</span><span>AI APIs</span><span>Algorithms</span></div>
+      <button class="roadmap-btn" data-path="ai">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="data" data-search="data scientist statistics data analysis visualization">
+      <div class="card-icon">◉</div>
+      <small>DOMAIN 03</small>
+      <h3>Data Scientist</h3>
+      <p>Analyse data, discover patterns and create predictive analytical models.</p>
+      <div class="chips"><span>SQL</span><span>Python</span><span>Statistics</span></div>
+      <button class="roadmap-btn" data-path="data">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="ml" data-search="deep learning engineer neural networks pytorch tensorflow">
+      <div class="card-icon">⬡</div>
+      <small>DOMAIN 04</small>
+      <h3>Deep Learning Engineer</h3>
+      <p>Develop neural networks for complex prediction, recognition and learning tasks.</p>
+      <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>Neural Networks</span></div>
+      <button class="roadmap-btn" data-path="deep">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="natural language processing nlp language models">
+      <div class="card-icon">⌘</div>
+      <small>DOMAIN 05</small>
+      <h3>NLP Engineer</h3>
+      <p>Build systems that understand, process and generate human language.</p>
+      <div class="chips"><span>NLP</span><span>Transformers</span><span>Python</span></div>
+      <button class="roadmap-btn" data-path="nlp">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="computer vision image recognition object detection">
+      <div class="card-icon">◎</div>
+      <small>DOMAIN 06</small>
+      <h3>Computer Vision Engineer</h3>
+      <p>Create systems that interpret images, videos and visual information.</p>
+      <div class="chips"><span>OpenCV</span><span>CNN</span><span>PyTorch</span></div>
+      <button class="roadmap-btn" data-path="vision">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="generative AI large language models llm">
+      <div class="card-icon">✺</div>
+      <small>DOMAIN 07</small>
+      <h3>Generative AI Engineer</h3>
+      <p>Develop applications that generate text, images, code and other content.</p>
+      <div class="chips"><span>LLMs</span><span>RAG</span><span>Prompt Engineering</span></div>
+      <button class="roadmap-btn" data-path="genai">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="ml" data-search="mlops engineer model deployment monitoring">
+      <div class="card-icon">⚙</div>
+      <small>DOMAIN 08</small>
+      <h3>MLOps Engineer</h3>
+      <p>Automate model deployment, monitoring, testing and machine learning workflows.</p>
+      <div class="chips"><span>Docker</span><span>MLflow</span><span>Cloud</span></div>
+      <button class="roadmap-btn" data-path="mlops">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="data" data-search="data analyst business intelligence visualization">
+      <div class="card-icon">▥</div>
+      <small>DOMAIN 09</small>
+      <h3>Data Analyst</h3>
+      <p>Transform raw data into reports, dashboards and actionable insights.</p>
+      <div class="chips"><span>Excel</span><span>SQL</span><span>Power BI</span></div>
+      <button class="roadmap-btn" data-path="analyst">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="advanced" data-search="robotics engineer automation sensors control">
+      <div class="card-icon">◉</div>
+      <small>DOMAIN 10</small>
+      <h3>Robotics & AI Engineer</h3>
+      <p>Develop intelligent robotic systems and autonomous applications.</p>
+      <div class="chips"><span>Python</span><span>C++</span><span>ROS</span></div>
+      <button class="roadmap-btn" data-path="robotics">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="ai" data-search="research scientist artificial intelligence mathematics research">
+      <div class="card-icon">⌬</div>
+      <small>DOMAIN 11</small>
+      <h3>AI Research Scientist</h3>
+      <p>Research new algorithms, AI architectures and innovative computational methods.</p>
+      <div class="chips"><span>Mathematics</span><span>Research</span><span>Deep Learning</span></div>
+      <button class="roadmap-btn" data-path="research">Explore Roadmap ↗</button>
+    </article>
+
+    <article class="career-card" data-category="ml" data-search="business intelligence machine learning predictive analytics">
+      <div class="card-icon">◫</div>
+      <small>DOMAIN 12</small>
+      <h3>AI Business Intelligence</h3>
+      <p>Combine business analytics, predictive modelling and intelligent decision systems.</p>
+      <div class="chips"><span>SQL</span><span>BI</span><span>ML</span></div>
+      <button class="roadmap-btn" data-path="bi">Explore Roadmap ↗</button>
+    </article>
+
+  </div>
+  <p id="noResults" hidden>No matching career specialization found.</p>
+</section>
+
+<!-- ROADMAP -->
+<section class="section roadmap-section" id="roadmap">
+  <div class="section-heading">
+    <small>02 / YOUR LEARNING JOURNEY</small>
+    <h2>COMPLETE AI <span>ROADMAP</span></h2>
+    <p>Follow a structured learning path from programming fundamentals to professional AI development.</p>
+  </div>
+
+  <div class="roadmap-top">
+    <div>
+      <small>SELECTED CAREER PATH</small>
+      <h3 id="roadmapTitle">Machine Learning Engineer</h3>
+    </div>
+    <span>BEGINNER TO ADVANCED</span>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-label">
+      <strong>YOUR LEARNING PROGRESS</strong>
+      <strong id="progressText">0%</strong>
+    </div>
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="roadmapStages" class="roadmap-stages"></div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-heading">
+    <small>03 / TECHNICAL DEVELOPMENT</small>
+    <h2>ESSENTIAL <span>AI SKILLS</span></h2>
+    <p>Build the technical foundation required to work in artificial intelligence and machine learning.</p>
+  </div>
+
+  <div class="skill-grid">
+
+    <article class="skill-card">
+      <h3>Programming Languages</h3>
+      <div class="chips">
+        <span>Python</span><span>R</span><span>SQL</span><span>C++</span><span>Java</span><span>Julia</span>
+      </div>
+      <p>Learn programming logic, data structures, functions, OOP and data manipulation.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Mathematics & Statistics</h3>
+      <div class="chips">
+        <span>Linear Algebra</span><span>Calculus</span><span>Probability</span><span>Statistics</span><span>Optimization</span>
+      </div>
+      <p>Understand the mathematical principles behind machine learning algorithms.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Machine Learning</h3>
+      <div class="chips">
+        <span>Regression</span><span>Classification</span><span>Clustering</span><span>Decision Trees</span><span>Ensemble Learning</span>
+      </div>
+      <p>Learn supervised learning, unsupervised learning and model evaluation.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Deep Learning</h3>
+      <div class="chips">
+        <span>Neural Networks</span><span>CNN</span><span>RNN</span><span>Transformers</span><span>PyTorch</span><span>TensorFlow</span>
+      </div>
+      <p>Build neural networks and understand modern deep learning architectures.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Data Science Libraries</h3>
+      <div class="chips">
+        <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Scikit-learn</span>
+      </div>
+      <p>Clean, analyse, visualize and prepare datasets for machine learning.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Generative AI Tools</h3>
+      <div class="chips">
+        <span>LLMs</span><span>Hugging Face</span><span>LangChain</span><span>RAG</span><span>Vector Databases</span>
+      </div>
+      <p>Develop AI-powered applications using language models and retrieval systems.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Development & Deployment</h3>
+      <div class="chips">
+        <span>Git</span><span>GitHub</span><span>Docker</span><span>FastAPI</span><span>Streamlit</span><span>MLflow</span>
+      </div>
+      <p>Build, test, deploy and monitor machine learning applications.</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Cloud & Computing</h3>
+      <div class="chips">
+        <span>AWS</span><span>Azure</span><span>Google Cloud</span><span>Linux</span><span>GPU Computing</span>
+      </div>
+      <p>Learn cloud infrastructure, computing resources and model deployment.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section resource-section" id="resources">
+  <div class="section-heading">
+    <small>04 / KNOWLEDGE CENTER</small>
+    <h2>LEARNING <span>RESOURCES</span></h2>
+    <p>Access trusted educational platforms, documentation and hands-on learning environments.</p>
+  </div>
+
+  <div class="resource-grid">
+    <a href="https://www.python.org/about/gettingstarted/" target="_blank" rel="noopener">
+      <small>PROGRAMMING</small>
+      <h3>Python Official ↗</h3>
+      <p>Learn Python fundamentals and explore official documentation.</p>
+    </a>
+
+    <a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">
+      <small>MACHINE LEARNING</small>
+      <h3>Google ML Crash Course ↗</h3>
+      <p>Study machine learning concepts through practical exercises.</p>
+    </a>
+
+    <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">
+      <small>DATA SCIENCE</small>
+      <h3>Kaggle Learn ↗</h3>
+      <p>Practise Python, machine learning, SQL and data visualization.</p>
+    </a>
+
+    <a href="https://www.deeplearning.ai/" target="_blank" rel="noopener">
+      <small>AI EDUCATION</small>
+      <h3>DeepLearning.AI ↗</h3>
+      <p>Explore AI, machine learning and deep learning courses.</p>
+    </a>
+
+    <a href="https://pytorch.org/tutorials/" target="_blank" rel="noopener">
+      <small>DEEP LEARNING</small>
+      <h3>PyTorch Tutorials ↗</h3>
+      <p>Learn neural network development using PyTorch.</p>
+    </a>
+
+    <a href="https://www.tensorflow.org/tutorials" target="_blank" rel="noopener">
+      <small>AI FRAMEWORKS</small>
+      <h3>TensorFlow ↗</h3>
+      <p>Explore tutorials for training and deploying machine learning models.</p>
+    </a>
+
+    <a href="https://huggingface.co/learn" target="_blank" rel="noopener">
+      <small>GENERATIVE AI</small>
+      <h3>Hugging Face ↗</h3>
+      <p>Learn NLP, transformers, datasets and modern AI models.</p>
+    </a>
+
+    <a href="https://www.fast.ai/" target="_blank" rel="noopener">
+      <small>PRACTICAL AI</small>
+      <h3>fast.ai ↗</h3>
+      <p>Explore practical deep learning lessons and projects.</p>
+    </a>
+
+    <a href="https://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener">
+      <small>ML DOCUMENTATION</small>
+      <h3>Scikit-learn ↗</h3>
+      <p>Study machine learning algorithms and implementation guides.</p>
+    </a>
+
+    <a href="https://www.khanacademy.org/math" target="_blank" rel="noopener">
+      <small>MATHEMATICS</small>
+      <h3>Khan Academy ↗</h3>
+      <p>Build mathematics and statistics fundamentals.</p>
+    </a>
+
+    <a href="https://colab.research.google.com/" target="_blank" rel="noopener">
+      <small>CODING ENVIRONMENT</small>
+      <h3>Google Colab ↗</h3>
+      <p>Write and execute Python notebooks in the browser.</p>
+    </a>
+
+    <a href="https://roadmap.sh/ai-data-scientist" target="_blank" rel="noopener">
+      <small>CAREER ROADMAP</small>
+      <h3>Roadmap.sh ↗</h3>
+      <p>Explore structured AI and data science learning paths.</p>
+    </a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-heading">
+    <small>05 / HANDS-ON EXPERIENCE</small>
+    <h2>REAL WORLD <span>PROJECTS</span></h2>
+    <p>Apply your knowledge by building projects at different learning levels.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <span class="level">BEGINNER</span>
+      <h3>Student Performance Predictor</h3>
+      <p>Build a basic model that estimates student performance using study-related data.</p>
+      <div class="chips"><span>Python</span><span>Pandas</span><span>Regression</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">BEGINNER</span>
+      <h3>House Price Prediction</h3>
+      <p>Train a regression model using property features and sample datasets.</p>
+      <div class="chips"><span>Python</span><span>Scikit-learn</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">INTERMEDIATE</span>
+      <h3>Email Spam Classifier</h3>
+      <p>Develop a text classification system that identifies spam messages.</p>
+      <div class="chips"><span>NLP</span><span>Python</span><span>ML</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">INTERMEDIATE</span>
+      <h3>Image Recognition System</h3>
+      <p>Train a neural network to classify images into different categories.</p>
+      <div class="chips"><span>CNN</span><span>TensorFlow</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">ADVANCED</span>
+      <h3>AI Career Recommendation System</h3>
+      <p>Build an intelligent platform that recommends careers based on student skills and preferences.</p>
+      <div class="chips"><span>Python</span><span>ML</span><span>SQL</span></div>
+    </article>
+
+    <article class="project-card">
+      <span class="level">ADVANCED</span>
+      <h3>Generative AI Study Assistant</h3>
+      <p>Create an AI-powered learning assistant that answers questions using uploaded study material.</p>
+      <div class="chips"><span>LLM</span><span>RAG</span><span>Python</span></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- INTERNSHIP AND JOBS -->
+<section class="section" id="jobs">
+  <div class="section-heading">
+    <small>06 / PROFESSIONAL OPPORTUNITIES</small>
+    <h2>INTERNSHIPS <span>& JOBS</span></h2>
+    <p>Discover internship platforms, technology companies and entry-level career opportunities.</p>
+  </div>
+
+  <div class="job-grid">
+    <article class="job-card">
+      <h3>Internship Platforms</h3>
+      <p>Find AI, ML, Python and data science internships.</p>
+      <a href="https://internshala.com/" target="_blank" rel="noopener">Internshala ↗</a>
+      <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">LinkedIn Jobs ↗</a>
+      <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service ↗</a>
+      <a href="https://wellfound.com/" target="_blank" rel="noopener">Wellfound ↗</a>
+    </article>
+
+    <article class="job-card">
+      <h3>AI & Technology Companies</h3>
+      <p>Explore official company career portals and openings.</p>
+      <a href="https://careers.google.com/" target="_blank" rel="noopener">Google Careers ↗</a>
+      <a href="https://careers.microsoft.com/" target="_blank" rel="noopener">Microsoft Careers ↗</a>
+      <a href="https://www.amazon.jobs/" target="_blank" rel="noopener">Amazon Jobs ↗</a>
+      <a href="https://www.ibm.com/careers/" target="_blank" rel="noopener">IBM Careers ↗</a>
+    </article>
+
+    <article class="job-card">
+      <h3>AI Job Search</h3>
+      <p>Search for entry-level and specialized AI roles.</p>
+      <a href="https://www.naukri.com/" target="_blank" rel="noopener">Naukri ↗</a>
+      <a href="https://www.foundit.in/" target="_blank" rel="noopener">Foundit ↗</a>
+      <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://www.instahyre.com/" target="_blank" rel="noopener">Instahyre ↗</a>
+    </article>
+  </div>
+</section>
+
+<!-- CAREER ROLES -->
+<section class="section">
+  <div class="section-heading">
+    <small>07 / CAREER PLANNING</small>
+    <h2>POPULAR AI <span>JOB ROLES</span></h2>
+  </div>
+
+  <div class="role-table">
+    <div class="role-row role-head">
+      <span>Job Role</span>
+      <span>Core Skills</span>
+      <span>Typical Work</span>
+    </div>
+    <div class="role-row">
+      <strong>ML Engineer</strong>
+      <span>Python, ML, SQL</span>
+      <span>Model development and deployment</span>
+    </div>
+    <div class="role-row">
+      <strong>AI Engineer</strong>
+      <span>Python, APIs, AI</span>
+      <span>Intelligent application development</span>
+    </div>
+    <div class="role-row">
+      <strong>Data Scientist</strong>
+      <span>Statistics, SQL, Python</span>
+      <span>Analysis and predictive modelling</span>
+    </div>
+    <div class="role-row">
+      <strong>NLP Engineer</strong>
+      <span>Python, NLP, Transformers</span>
+      <span>Language processing systems</span>
+    </div>
+    <div class="role-row">
+      <strong>MLOps Engineer</strong>
+      <span>Docker, Cloud, MLflow</span>
+      <span>Model deployment and monitoring</span>
+    </div>
+  </div>
+  <p class="note">Job responsibilities and required qualifications vary by employer and experience level.</p>
+</section>
+
+<!-- JOB READINESS -->
+<section class="section">
+  <div class="section-heading">
+    <small>08 / CAREER PREPARATION</small>
+    <h2>JOB READINESS <span>CHECKLIST</span></h2>
+    <p>Track your preparation before applying for internships and jobs.</p>
+  </div>
+
+  <div class="checklist" id="checklist">
+    <label><input type="checkbox" data-id="python"> Python programming fundamentals completed</label>
+    <label><input type="checkbox" data-id="math"> Mathematics and statistics studied</label>
+    <label><input type="checkbox" data-id="ml"> Machine learning fundamentals completed</label>
+    <label><input type="checkbox" data-id="projects"> At least three projects completed</label>
+    <label><input type="checkbox" data-id="github"> GitHub portfolio prepared</label>
+    <label><input type="checkbox" data-id="resume"> Professional resume prepared</label>
+    <label><input type="checkbox" data-id="interview"> Technical interview preparation completed</label>
+    <label><input type="checkbox" data-id="internship"> Internship applications started</label>
+
+    <div class="check-footer">
+      <strong id="checkCount">0 / 8 Completed</strong>
+      <button id="resetProgress" class="btn outline">Reset Progress</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-heading">
+    <small>09 / KNOWLEDGE SUPPORT</small>
+    <h2>FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+  </div>
+
+  <div class="faq-list">
+    <details>
+      <summary>Can a BCA student enter the AI and Machine Learning field?</summary>
+      <p>Yes. A BCA student can build relevant programming, mathematics, machine learning and project skills. Some advanced roles may require a master's degree or additional qualifications.</p>
+    </details>
+
+    <details>
+      <summary>Which programming language should beginners learn first?</summary>
+      <p>Python is a popular starting point because of its readable syntax and extensive data science and machine learning ecosystem.</p>
+    </details>
+
+    <details>
+      <summary>Is advanced mathematics necessary for AI?</summary>
+      <p>Basic algebra, statistics, probability and linear algebra are important. Advanced mathematics becomes more useful for research and specialized AI engineering roles.</p>
+    </details>
+
+    <details>
+      <summary>How can students get AI internships?</summary>
+      <p>Build practical projects, prepare a GitHub portfolio, create a professional resume and apply through verified internship and company career portals.</p>
+    </details>
+
+    <details>
+      <summary>Do AI engineers need to know web development?</summary>
+      <p>It is not mandatory for every role, but web development and APIs can help AI engineers build and deploy usable applications.</p>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <small>YOUR FUTURE IN INTELLIGENT TECHNOLOGY</small>
+  <h2>LEARN AI. <span>BUILD THE FUTURE.</span></h2>
+  <p>Start with the fundamentals, develop practical skills and turn your ideas into intelligent solutions.</p>
+  <a href="#roadmap" class="btn primary">Begin Your Journey ↗</a>
+</section>
+
+</main>
+
+<footer>
+  <a href="#home" class="logo">AI_CORE<span>_</span></a>
+  <p>AI & Machine Learning Career Guidance</p>
+  <p>© 2026 Career Margdarshak. Educational Use.</p>
+</footer>
+
+</body>
+</html>

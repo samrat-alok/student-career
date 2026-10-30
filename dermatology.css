@@ -1,0 +1,458 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #00f5ff;
+    --secondary: #b026ff;
+    --background: #070b18;
+    --card: #101a2d;
+    --text: #f4f7ff;
+    --muted: #aab6cc;
+    --border: rgba(0, 245, 255, 0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(7, 11, 24, 0.95);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    color: var(--text);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 470px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background:
+        radial-gradient(circle at 80% 40%, rgba(176, 38, 255, 0.19), transparent 30%),
+        radial-gradient(circle at 15% 70%, rgba(0, 245, 255, 0.13), transparent 35%);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tag {
+    color: var(--primary);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    margin: 15px 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(38px, 7vw, 76px);
+    line-height: 1.2;
+}
+
+.hero h1 span,
+.hero h2 {
+    color: var(--primary);
+}
+
+.hero h2 {
+    font-size: clamp(18px, 3vw, 25px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.hero-icon {
+    font-size: clamp(100px, 18vw, 190px);
+    filter: drop-shadow(0 0 25px rgba(0, 245, 255, 0.5));
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    background: var(--primary);
+    color: #06101a;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primary);
+    box-shadow: 0 0 18px rgba(0, 245, 255, 0.35);
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(23px, 4vw, 34px);
+}
+
+.section-title span {
+    color: var(--primary);
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--muted);
+    margin: 0 auto 35px;
+    max-width: 700px;
+}
+
+/* CARDS */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.info-card {
+    padding: 25px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--primary);
+    box-shadow: 0 0 22px rgba(0, 245, 255, 0.13);
+}
+
+.info-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.info-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.info-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+/* ROADMAP PROGRESS */
+
+.progress-box,
+.planner-box,
+.profile-box {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#progressText {
+    color: var(--primary);
+}
+
+.progress-track {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    background: #26334a;
+    border-radius: 20px;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+/* ROADMAP ITEMS */
+
+.roadmap-list {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.roadmap-item:hover {
+    border-color: var(--primary);
+}
+
+.roadmap-item input {
+    width: 19px;
+    height: 19px;
+    margin-top: 5px;
+    accent-color: var(--primary);
+    flex-shrink: 0;
+}
+
+.roadmap-item span {
+    display: grid;
+}
+
+.roadmap-item strong {
+    color: var(--text);
+}
+
+.roadmap-item small {
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.roadmap-item.completed {
+    border-color: var(--primary);
+    background: rgba(0, 245, 255, 0.07);
+}
+
+.roadmap-item.completed strong {
+    color: var(--primary);
+}
+
+/* STUDY PLANNER */
+
+.planner-input {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    min-width: 0;
+    width: 100%;
+    padding: 13px;
+    background: #080f20;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus {
+    border-color: var(--primary);
+}
+
+.goal-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.goal-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-top: 10px;
+    background: #080f20;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.goal-list li span {
+    flex: 1;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    border: 1px solid #ff4d75;
+    border-radius: 5px;
+    background: transparent;
+    color: #ff7895;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #ff4d75;
+    color: white;
+}
+
+/* STUDENT PROFILE */
+
+.profile-box form {
+    display: grid;
+    gap: 15px;
+}
+
+#profileMessage {
+    color: var(--primary);
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 8%;
+    text-align: center;
+    background: #040711;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* BACK TO TOP */
+
+#topBtn {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    background: var(--primary);
+    color: #06101a;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero-icon {
+        font-size: 100px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .planner-input {
+        flex-direction: column;
+    }
+
+    .progress-info {
+        flex-direction: column;
+    }
+}

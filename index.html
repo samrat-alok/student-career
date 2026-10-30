@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Margdarshak | Find Your Future</title>
+  <meta name="description" content="Discover career paths based on your education, interests, skills and goals.">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">🎓</span>
+      Career <span>Margdarshak</span>
+    </a>
+
+    <nav>
+      <a href="index.html">home</a>
+      <a href="#finder">Find Career</a>
+      <a href="#careers">Explore Careers</a>
+    </nav>
+
+    <a href="#finder" class="nav-button">Get Started →</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">✦ YOUR FUTURE STARTS HERE</span>
+
+        <h1>Discover a career that
+          <span>fits your future.</span>
+        </h1>
+
+        <p>
+          Confused about what to do next?
+          Find career options based on your stream,
+          interests, budget and future goals.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#finder" class="primary-button">
+            Find My Career →
+          </a>
+          <a href="#careers" class="text-button">
+            Explore Careers ↗
+          </a>
+        </div>
+
+        <div class="stats">
+          <div><strong>10+</strong><small>Career paths</small></div>
+          <div><strong>3</strong><small>Study stages</small></div>
+          <div><strong>100%</strong><small>Explore your options</small></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-circle">🚀</div>
+        <div class="floating-card card-one">🩺 Doctor</div>
+        <div class="floating-card card-two">💻 Software Engineer</div>
+        <div class="floating-card card-three">🏛️ Government Jobs</div>
+        <div class="floating-card card-four">📈 Entrepreneur</div>
+      </div>
+    </section>
+
+    <section class="finder-section" id="finder">
+      <div class="section-heading">
+        <span class="eyebrow">PERSONALIZED GUIDANCE</span>
+        <h2>Find your career path</h2>
+        <p>Tell us about yourself to explore suitable options.</p>
+      </div>
+
+      <form id="careerForm" class="career-form">
+        <label for="level">What level are you at?</label>
+        <select id="level" required>
+          <option value="">Select your level</option>
+          <option value="10th">After 10th</option>
+          <option value="12th">After 12th</option>
+          <option value="college">College Student</option>
+          <option value="graduate">Graduate</option>
+        </select>
+
+        <label for="stream">What's your stream?</label>
+        <select id="stream" required>
+          <option value="">Select stream</option>
+          <option value="science">Science (PCM/PCB)</option>
+          <option value="commerce">Commerce</option>
+          <option value="arts">Arts / Humanities</option>
+          <option value="computer">Computer / IT</option>
+          <option value="other">Other / Not decided</option>
+        </select>
+
+        <label for="interest">What interests you most?</label>
+        <select id="interest" required>
+          <option value="">Choose your interest</option>
+          <option value="medical">Medical & Healthcare</option>
+          <option value="technology">Technology & Coding</option>
+          <option value="government">Government Jobs</option>
+          <option value="business">Business & Entrepreneurship</option>
+          <option value="creative">Creative & Design</option>
+          <option value="law">Law & Public Service</option>
+        </select>
+
+        <label for="budget">Annual study budget</label>
+        <select id="budget" required>
+          <option value="">Choose your budget</option>
+          <option value="low">Below ₹25,000</option>
+          <option value="medium">₹25,000–₹1,00,000</option>
+          <option value="high">Above ₹1,00,000</option>
+        </select>
+
+        <label for="goal">What's your main goal?</label>
+        <select id="goal" required>
+          <option value="">Choose a goal</option>
+          <option value="job">Get a job</option>
+          <option value="salary">High earning potential</option>
+          <option value="government">Government job</option>
+          <option value="business">Start a business</option>
+          <option value="help">Help people</option>
+        </select>
+
+        <button type="submit" class="primary-button full-button">
+          Show My Career Suggestions →
+        </button>
+
+        <p class="form-note">
+          Suggestions are a starting point. Check eligibility,
+          fees and entrance requirements before deciding.
+        </p>
+      </form>
+
+      <div id="results" class="results" aria-live="polite"></div>
+    </section>
+
+    <section class="careers-section" id="careers">
+      <div class="section-heading">
+        <span class="eyebrow">EXPLORE YOUR POSSIBILITIES</span>
+        <h2>Popular career paths</h2>
+        <p>Discover a field that matches your interests.</p>
+      </div>
+
+      <div class="career-grid">
+        <article class="career-card">
+          <div class="career-icon medical">🩺</div>
+          <h3>Medical & Healthcare</h3>
+          <p>Explore medicine, nursing, pharmacy and allied health.</p>
+          <a href="doctor.html" data-interest="medical">Explore path →</a>
+        </article>
+
+        <article class="career-card">
+          <div class="career-icon tech">💻</div>
+          <h3>Engineering & IT</h3>
+          <p>Explore software development, AI, data and cybersecurity.</p>
+          <a href="engineer.html" data-interest="technology">Explore path →</a>
+        </article>
+
+        <article class="career-card">
+          <div class="career-icon govt">🏛️</div>
+          <h3>Government Jobs</h3>
+          <p>Explore UPSC, SSC, banking and state-level examinations.</p>
+          <a href="government.html" data-interest="government">Explore path →</a>
+        </article>
+
+        <article class="career-card">
+          <div class="career-icon business">📈</div>
+          <h3>Business & Startup</h3>
+          <p>Learn about entrepreneurship, finance and management.</p>
+          <a href="business.html" data-interest="business">Explore path →</a>
+        </article>
+
+        <article class="career-card">
+          <div class="career-icon creative">🎨</div>
+          <h3>Design & Creative</h3>
+          <p>Explore graphic design, animation and digital media.</p>
+          <a href="design.html" data-interest="creative">Explore path →</a>
+        </article>
+
+        <article class="career-card">
+          <div class="career-icon law">⚖️</div>
+          <h3>Law & Public Service</h3>
+          <p>Explore legal studies, advocacy and public service.</p>
+          <a href="law.html" data-interest="law">Explore path →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="brand footer-brand">🎓 Career Margdarshak</a>
+    <p>Better Guidance. Brighter Future.</p>
+    <small>© 2026 Career Margdarshak</small>
+  </footer>
+
+</body>
+</html>
