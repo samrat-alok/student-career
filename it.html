@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore computer science and IT careers, skills, roadmaps, learning resources, internships and job opportunities.">
+  <title>IT Nexus | Computer Science & IT Careers</title>
+  <link rel="stylesheet" href="IT.CSS">
+  <script src="IT.JavaScript" defer></script>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home"><span>IT</span> NEXUS<span class="dot">_</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="#careers">Careers</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#skills">Skills</a>
+      <a href="#resources">Resources</a>
+      <a href="#opportunities">Jobs & Internships</a>
+    </nav>
+    <a href="#roadmap" class="nav-btn">Start Learning ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> FUTURE TECHNOLOGY CAREER HUB</div>
+        <h1>BUILD YOUR<br> <span class="gradient-text">DIGITAL FUTURE</span></h1>
+        <p class="hero-subtitle">
+          Explore Computer Science & IT. Discover career paths, master
+          in-demand skills, build real-world projects, and prepare for
+          internships and technology jobs.
+        </p>
+        <div class="hero-actions">
+          <a href="#careers" class="btn btn-primary">Explore Careers ↗</a>
+          <a href="#roadmap" class="btn btn-outline">View Roadmap</a>
+        </div>
+        <div class="hero-tags">
+          <span>01 / LEARN</span><span>02 / BUILD</span><span>03 / LAUNCH</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core-card">
+          <div class="terminal-top"><span></span><span></span><span></span><small>career.init()</small></div>
+          <div class="terminal-code">
+            <p><span class="pink">const</span> future = {</p>
+            <p class="indent">skills: <span class="cyan">"Your Potential"</span>,</p>
+            <p class="indent">projects: <span class="green">"Build Real"</span>,</p>
+            <p class="indent">career: <span class="purple">"Unlimited"</span></p>
+            <p>};</p>
+            <p class="success"> &gt; SYSTEM READY_</p>
+          </div>
+        </div>
+        <span class="float-tag tag-one">AI / ML</span>
+        <span class="float-tag tag-two">CYBERSECURITY</span>
+        <span class="float-tag tag-three">CLOUD</span>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="stat"><strong>08+</strong><span>Career Domains</span></div>
+      <div class="stat"><strong>06</strong><span>Learning Stages</span></div>
+      <div class="stat"><strong>10+</strong><span>Learning Resources</span></div>
+      <div class="stat"><strong>∞</strong><span>Ways to Build</span></div>
+    </section>
+
+    <section class="section" id="careers">
+      <div class="section-heading">
+        <span class="eyebrow">01 / EXPLORE YOUR OPTIONS</span>
+        <h2>CHOOSE YOUR <span class="gradient-text">TECH DOMAIN</span></h2>
+        <p>Find a specialization that matches your interests and goals.</p>
+      </div>
+
+      <div class="search-bar">
+        <span>⌕</span>
+        <input id="careerSearch" type="search" placeholder="Search careers, skills or technologies..." aria-label="Search career domains">
+      </div>
+      <div class="filter-row" id="careerFilters">
+        <button class="filter active" data-filter="all">All Domains</button>
+        <button class="filter" data-filter="development">Development</button>
+        <button class="filter" data-filter="data">Data & AI</button>
+        <button class="filter" data-filter="security">Security</button>
+        <button class="filter" data-filter="infrastructure">Cloud & Infrastructure</button>
+      </div>
+
+      <div class="career-grid" id="careerGrid">
+        <article class="career-card" data-category="development" data-search="software engineer programming algorithms java python c++">
+          <div class="card-icon">⌘</div><span class="card-index">DOMAIN_01</span>
+          <h3>Software Engineering</h3>
+          <p>Design, develop, test and maintain software applications and systems.</p>
+          <div class="chips"><span>Java</span><span>Python</span><span>DSA</span></div>
+          <p class="role-line">Roles: Software Engineer, SDE, QA Engineer</p>
+          <button class="text-link open-roadmap" data-roadmap="software">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="development" data-search="web frontend backend full stack html css javascript react node">
+          <div class="card-icon">⌘</div><span class="card-index">DOMAIN_02</span>
+          <h3>Web Development</h3>
+          <p>Build responsive websites, web applications, APIs and digital products.</p>
+          <div class="chips"><span>HTML/CSS</span><span>JavaScript</span><span>React</span></div>
+          <p class="role-line">Roles: Frontend, Backend, Full-Stack Developer</p>
+          <button class="text-link open-roadmap" data-roadmap="web">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="data" data-search="artificial intelligence machine learning deep learning python neural networks">
+          <div class="card-icon">⌬</div><span class="card-index">DOMAIN_03</span>
+          <h3>AI & Machine Learning</h3>
+          <p>Create intelligent systems using data, algorithms and machine learning.</p>
+          <div class="chips"><span>Python</span><span>Statistics</span><span>ML</span></div>
+          <p class="role-line">Roles: ML Engineer, AI Engineer, Research Assistant</p>
+          <button class="text-link open-roadmap" data-roadmap="ai">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="security" data-search="cybersecurity ethical hacking network security linux penetration testing">
+          <div class="card-icon">⬡</div><span class="card-index">DOMAIN_04</span>
+          <h3>Cybersecurity</h3>
+          <p>Protect systems, investigate threats and test security with authorization.</p>
+          <div class="chips"><span>Linux</span><span>Networking</span><span>Python</span></div>
+          <p class="role-line">Roles: Security Analyst, Penetration Tester</p>
+          <button class="text-link open-roadmap" data-roadmap="security">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="data" data-search="data science analytics sql statistics visualization pandas">
+          <div class="card-icon">◈</div><span class="card-index">DOMAIN_05</span>
+          <h3>Data Science & Analytics</h3>
+          <p>Turn raw data into useful insights, reports, predictions and decisions.</p>
+          <div class="chips"><span>SQL</span><span>Python</span><span>Statistics</span></div>
+          <p class="role-line">Roles: Data Analyst, Data Scientist, BI Analyst</p>
+          <button class="text-link open-roadmap" data-roadmap="data">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="infrastructure" data-search="cloud computing aws azure google cloud linux networking">
+          <div class="card-icon">☁</div><span class="card-index">DOMAIN_06</span>
+          <h3>Cloud Computing</h3>
+          <p>Deploy, scale and manage applications and infrastructure in the cloud.</p>
+          <div class="chips"><span>AWS</span><span>Azure</span><span>Linux</span></div>
+          <p class="role-line">Roles: Cloud Engineer, Cloud Support Associate</p>
+          <button class="text-link open-roadmap" data-roadmap="cloud">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="infrastructure" data-search="devops docker kubernetes ci cd git automation">
+          <div class="card-icon">⟳</div><span class="card-index">DOMAIN_07</span>
+          <h3>DevOps & SRE</h3>
+          <p>Automate software delivery, monitoring, deployment and system reliability.</p>
+          <div class="chips"><span>Git</span><span>Docker</span><span>CI/CD</span></div>
+          <p class="role-line">Roles: DevOps Engineer, SRE Associate</p>
+          <button class="text-link open-roadmap" data-roadmap="devops">Explore Roadmap ↗</button>
+        </article>
+
+        <article class="career-card" data-category="development" data-search="mobile application android ios kotlin swift flutter">
+          <div class="card-icon">▣</div><span class="card-index">DOMAIN_08</span>
+          <h3>Mobile App Development</h3>
+          <p>Create mobile applications for Android, iOS and cross-platform devices.</p>
+          <div class="chips"><span>Kotlin</span><span>Flutter</span><span>Swift</span></div>
+          <p class="role-line">Roles: Android Developer, iOS Developer</p>
+          <button class="text-link open-roadmap" data-roadmap="mobile">Explore Roadmap ↗</button>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No matching domains found. Try another search.</p>
+    </section>
+
+    <section class="section roadmap-section" id="roadmap">
+      <div class="section-heading">
+        <span class="eyebrow">02 / YOUR LEARNING MISSION</span>
+        <h2>THE <span class="gradient-text">CAREER ROADMAP</span></h2>
+        <p>Follow the stages in order. Select a specialization above to load its suggested roadmap.</p>
+      </div>
+      <div class="roadmap-banner">
+        <div><span class="eyebrow">CURRENT PATH</span><h3 id="roadmapTitle">Software Engineering Roadmap</h3></div>
+        <span class="status-pill">SELF-PACED</span>
+      </div>
+      <div class="progress-panel">
+        <div class="progress-label"><span>YOUR LEARNING PROGRESS</span><strong id="progressText">0% COMPLETE</strong></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <p>Progress is stored in this browser on this device.</p>
+      </div>
+      <div class="roadmap-list" id="roadmapList"></div>
+      <div class="note">Roadmap durations are flexible estimates. Practice consistently and build projects before applying for roles.</div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <span class="eyebrow">03 / BUILD YOUR TOOLKIT</span>
+        <h2>TECHNICAL <span class="gradient-text">SKILLS & LANGUAGES</span></h2>
+        <p>Learn the fundamentals first. Add specialization-specific tools when needed.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-panel"><h3>01 / Programming</h3><div class="skill-items"><span>Python</span><span>Java</span><span>C</span><span>C++</span><span>JavaScript</span><span>C#</span></div><p>Choose one primary language and practise logic, functions, data structures and algorithms.</p></article>
+        <article class="skill-panel"><h3>02 / Web Technologies</h3><div class="skill-items"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span><span>REST APIs</span><span>TypeScript</span></div><p>Build responsive interfaces and learn how frontends communicate with backends.</p></article>
+        <article class="skill-panel"><h3>03 / Core Computer Science</h3><div class="skill-items"><span>DSA</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Networking</span><span>SQL</span></div><p>Understand the concepts that support technical interviews and real software systems.</p></article>
+        <article class="skill-panel"><h3>04 / Tools & Infrastructure</h3><div class="skill-items"><span>Git</span><span>GitHub</span><span>Linux</span><span>Docker</span><span>AWS</span><span>CI/CD</span></div><p>Learn version control, command-line tools, deployment and infrastructure fundamentals.</p></article>
+        <article class="skill-panel"><h3>05 / AI & Data</h3><div class="skill-items"><span>NumPy</span><span>Pandas</span><span>Statistics</span><span>Scikit-learn</span><span>SQL</span><span>Visualization</span></div><p>Build a foundation in data cleaning, analysis, statistics and model evaluation.</p></article>
+        <article class="skill-panel"><h3>06 / Professional Skills</h3><div class="skill-items"><span>Communication</span><span>Problem-solving</span><span>Teamwork</span><span>Documentation</span><span>English</span><span>Time Management</span></div><p>Practise explaining your work, collaborating and documenting technical decisions.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <span class="eyebrow">04 / LEARN FROM TRUSTED SOURCES</span>
+        <h2>YOUR <span class="gradient-text">RESOURCE LIBRARY</span></h2>
+        <p>Start with free lessons and official documentation.</p>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card" href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer"><span class="resource-type">INTERACTIVE COURSES</span><h3>freeCodeCamp ↗</h3><p>Web development, JavaScript, Python, databases and project-based practice.</p><span class="resource-action">Open learning platform</span></a>
+        <a class="resource-card" href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener noreferrer"><span class="resource-type">WEB DOCUMENTATION</span><h3>MDN Web Docs ↗</h3><p>Learn HTML, CSS, JavaScript and modern web development fundamentals.</p><span class="resource-action">Explore tutorials</span></a>
+        <a class="resource-card" href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener noreferrer"><span class="resource-type">COMPUTER SCIENCE</span><h3>Harvard CS50 ↗</h3><p>Study programming, algorithms, abstraction and core computer science ideas.</p><span class="resource-action">Start CS50</span></a>
+        <a class="resource-card" href="https://roadmap.sh/" target="_blank" rel="noopener noreferrer"><span class="resource-type">VISUAL ROADMAPS</span><h3>roadmap.sh ↗</h3><p>Explore structured paths for developers and technology specializations.</p><span class="resource-action">View roadmaps</span></a>
+        <a class="resource-card" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span class="resource-type">PROJECT PORTFOLIO</span><h3>GitHub ↗</h3><p>Store projects, track changes, collaborate and share your work with recruiters.</p><span class="resource-action">Build your portfolio</span></a>
+        <a class="resource-card" href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer"><span class="resource-type">CODING PRACTICE</span><h3>HackerRank ↗</h3><p>Practise programming challenges and prepare for technical assessments.</p><span class="resource-action">Practise coding</span></a>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <span class="eyebrow">05 / PROVE YOUR SKILLS</span>
+        <h2>BUILD A <span class="gradient-text">PROJECT PORTFOLIO</span></h2>
+        <p>Choose projects that demonstrate what you can actually build.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card"><span class="level">BEGINNER</span><h3>Personal Portfolio Website</h3><p>Build a responsive website with an introduction, skills, projects and contact section.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        <article class="project-card"><span class="level">INTERMEDIATE</span><h3>Student Career Finder</h3><p>Create a career recommendation interface with filters, learning resources and saved progress.</p><div class="chips"><span>JavaScript</span><span>APIs</span><span>SQL</span></div></article>
+        <article class="project-card"><span class="level">INTERMEDIATE</span><h3>Data Analysis Dashboard</h3><p>Analyse a public dataset, clean it and present useful insights in charts and reports.</p><div class="chips"><span>Python</span><span>Pandas</span><span>SQL</span></div></article>
+        <article class="project-card"><span class="level">SPECIALIZED</span><h3>Security Lab Report</h3><p>Document safe, authorized lab exercises, findings, mitigations and remediation steps.</p><div class="chips"><span>Linux</span><span>Networking</span><span>Security</span></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="opportunities">
+      <div class="section-heading">
+        <span class="eyebrow">06 / LAUNCH YOUR CAREER</span>
+        <h2>INTERNSHIPS <span class="gradient-text">& JOBS</span></h2>
+        <p>Find opportunities, prepare your application and keep improving your portfolio.</p>
+      </div>
+      <div class="opportunity-grid">
+        <article class="opportunity-card">
+          <div class="card-icon">↗</div><h3>Internship Opportunities</h3>
+          <p>Search for student internships, training opportunities and entry-level technical experience.</p>
+          <ul><li>Prepare a one-page resume.</li><li>Include relevant projects and GitHub links.</li><li>Check eligibility, location and application deadlines.</li></ul>
+          <div class="link-stack">
+            <a href="https://internshala.com/" target="_blank" rel="noopener noreferrer">Internshala ↗</a>
+            <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">LinkedIn Jobs ↗</a>
+            <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">National Career Service ↗</a>
+          </div>
+        </article>
+        <article class="opportunity-card">
+          <div class="card-icon">⌘</div><h3>Technology Job Portals</h3>
+          <p>Look for fresher positions, graduate programs, junior engineering roles and support roles.</p>
+          <ul><li>Match your skills to the job description.</li><li>Practise coding and interview questions.</li><li>Apply only through verified listings.</li></ul>
+          <div class="link-stack">
+            <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">LinkedIn Jobs ↗</a>
+            <a href="https://www.naukri.com/" target="_blank" rel="noopener noreferrer">Naukri ↗</a>
+            <a href="https://www.foundit.in/" target="_blank" rel="noopener noreferrer">Foundit ↗</a>
+          </div>
+        </article>
+        <article class="opportunity-card">
+          <div class="card-icon">◎</div><h3>Company Career Pages</h3>
+          <p>Check official hiring pages for graduate opportunities, internships and eligibility criteria.</p>
+          <div class="link-stack">
+            <a href="https://www.amazon.jobs/" target="_blank" rel="noopener noreferrer">Amazon Jobs ↗</a>
+            <a href="https://careers.google.com/" target="_blank" rel="noopener noreferrer">Google Careers ↗</a>
+            <a href="https://careers.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Careers ↗</a>
+            <a href="https://www.ibm.com/careers/" target="_blank" rel="noopener noreferrer">IBM Careers ↗</a>
+          </div>
+        </article>
+      </div>
+      <div class="note warning">Important: Job listings, eligibility and internship availability change. A course or project does not guarantee selection. Never pay an unverified recruiter for a job offer.</div>
+    </section>
+
+    <section class="section application-section" id="readiness">
+      <div class="section-heading">
+        <span class="eyebrow">07 / CHECK YOUR READINESS</span>
+        <h2>JOB-READY <span class="gradient-text">CHECKLIST</span></h2>
+        <p>Mark each item when you have genuinely completed it.</p>
+      </div>
+      <div class="checklist" id="readinessList">
+        <label><input type="checkbox" data-ready="resume"> I have a clear, updated resume.</label>
+        <label><input type="checkbox" data-ready="github"> I have a GitHub profile with working projects.</label>
+        <label><input type="checkbox" data-ready="coding"> I practise coding and problem-solving regularly.</label>
+        <label><input type="checkbox" data-ready="fundamentals"> I understand the core concepts for my chosen role.</label>
+        <label><input type="checkbox" data-ready="interview"> I have practised technical and HR interview questions.</label>
+        <label><input type="checkbox" data-ready="applications"> I track applications and follow up professionally.</label>
+        <div class="readiness-footer"><span id="readinessText">0 of 6 completed</span><button id="resetProgress" class="btn btn-outline" type="button">Reset Progress</button></div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <span class="eyebrow">YOUR FUTURE STARTS HERE</span>
+      <h2>LEARN. BUILD. <span class="gradient-text">GET HIRED.</span></h2>
+      <p>Choose one path, practise consistently and turn your knowledge into real projects.</p>
+      <a href="#roadmap" class="btn btn-primary">Begin Your Roadmap ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span>IT</span> NEXUS<span class="dot">_</span></a>
+    <p>Explore technology. Build skills. Create your future.</p>
+    <span>© 2026 IT Nexus. Educational career guidance.</span>
+  </footer>
+</body>
+</html>
